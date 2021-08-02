@@ -1,0 +1,25 @@
+diff --git a/drivers/tty/tty_io.c b/drivers/tty/tty_io.c
+index 5b64bb5280fb..325feec1c923 100644
+--- a/drivers/tty/tty_io.c
++++ b/drivers/tty/tty_io.c
+@@ -1351,8 +1351,18 @@ static ssize_t tty_line_name(struct tty_driver *driver, int index, char *p)
+ 	if (driver->flags & TTY_DRIVER_UNNUMBERED_NODE)
+ 		return sprintf(p, "%s", driver->name);
+ 	else
+-		return sprintf(p, "%s%d", driver->name,
+-			       index + driver->name_base);
++    {
++        if(strncmp(driver->name,"ttyS",4) == 0)
++        {
++            printk("tty_line_name %s %d",driver->name,index+ driver->name_base);
++            if(index+ driver->name_base == 3)
++                return sprintf(p,"ttyWCH0");
++            
++            if(index + driver->name_base == 5)
++                return sprintf(p,"ttyWCH1");
++        }
++        return sprintf(p, "%s%d", driver->name,index + driver->name_base);
++    }
+ }
+ 
+ /**

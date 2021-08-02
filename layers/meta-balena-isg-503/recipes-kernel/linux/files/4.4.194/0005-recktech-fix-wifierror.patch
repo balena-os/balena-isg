@@ -1,0 +1,22 @@
+diff --git a/drivers/net/wireless/rockchip_wlan/wifi_sys/rkwifi_sys_iface.c b/drivers/net/wireless/rockchip_wlan/wifi_sys/rkwifi_sys_iface.c
+old mode 100644
+new mode 100755
+index 07862a50c6b5..634062d6433b
+--- a/drivers/net/wireless/rockchip_wlan/wifi_sys/rkwifi_sys_iface.c
++++ b/drivers/net/wireless/rockchip_wlan/wifi_sys/rkwifi_sys_iface.c
+@@ -195,13 +195,14 @@ static int wifi_init_exit_module(int enable)
+ 	}
+ #endif
+ #ifdef CONFIG_RTL_WIRELESS_SOLUTION
+-	if (type < WIFI_RTL_SERIES) {
++/*	if (type < WIFI_RTL_SERIES) {
+ 		if (enable > 0)
+ 			ret = rockchip_wifi_init_module_rtkwifi();
+ 		else
+ 			rockchip_wifi_exit_module_rtkwifi();
+ 		return ret;
+ 	}
++*/
+ #endif
+ #endif
+ #endif

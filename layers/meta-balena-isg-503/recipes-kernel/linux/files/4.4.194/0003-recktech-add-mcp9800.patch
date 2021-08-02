@@ -1,0 +1,458 @@
+diff --git a/drivers/misc/Kconfig b/drivers/misc/Kconfig
+old mode 100644
+new mode 100755
+index 77fa126eb1f2..c60690368da9
+--- a/drivers/misc/Kconfig
++++ b/drivers/misc/Kconfig
+@@ -563,6 +563,14 @@ config GPIO_DET
+ 	bool "gpio detection driver"
+ 	help
+ 	  Enable this driver will support gpio detection.
++config MCP9800_MISC
++	tristate "mcp9800  temrature"
++	depends on I2C
++	help
++		Say Y here if you have a mcp9800 controller.
++		If unsure, say N.
++		To compile this driver as a module, choose M here: the
++		module will be called mcp9800.
+ 
+ source "drivers/misc/c2port/Kconfig"
+ source "drivers/misc/eeprom/Kconfig"
+diff --git a/drivers/misc/Makefile b/drivers/misc/Makefile
+old mode 100644
+new mode 100755
+index b58f922dd5a0..d075d84e3225
+--- a/drivers/misc/Makefile
++++ b/drivers/misc/Makefile
+@@ -61,3 +61,4 @@ obj-$(CONFIG_CXL_BASE)		+= cxl/
+ obj-$(CONFIG_UID_SYS_STATS) += uid_sys_stats.o
+ obj-$(CONFIG_MEMORY_STATE_TIME) += memory_state_time.o
+ obj-$(CONFIG_USB_CAM_GPIO)	+= usb_cam_gpio.o
++obj-$(CONFIG_MCP9800_MISC)   	+= mcp9800.o
+diff --git a/drivers/misc/mcp9800.c b/drivers/misc/mcp9800.c
+new file mode 100755
+index 000000000000..09172d827378
+--- /dev/null
++++ b/drivers/misc/mcp9800.c
+@@ -0,0 +1,420 @@
++#include <linux/fs.h>
++#include <linux/i2c.h>
++#include <linux/delay.h>
++#include <linux/sysfs.h>
++#include <linux/module.h>
++#include <linux/uaccess.h>
++#include <linux/miscdevice.h>
++#include <linux/interrupt.h>
++#include <linux/gpio.h>
++#ifdef CONFIG_OF
++#include <linux/of.h> 
++#include <linux/of_device.h>
++#include <linux/of_gpio.h>
++#endif
++
++#define MCP_DBG
++#ifdef  MCP_DBG
++#define MCP_DEBUG(fmt, args...) printk(KERN_ALERT "" fmt, ##args)
++#else
++#define MCP_DEBUG(fmt, args...)
++#endif
++
++#define MCP_TEMP	0x00
++#define MCP_CONF	0x01
++#define MCP_HYST	0x02
++#define MCP_LIMIT	0x03
++
++#define ELEMENTS 8
++#define MISC_NAME "mcp9800_dev"
++
++#ifdef CONFIG_MACH_MX6Q_PANDA
++#define PANDA_FAN_EN		IMX_GPIO_NR(1, 19)
++#define FAN_ENABLE 1
++#define FAN_DISABLE 0
++#endif
++
++void obj_mcp_release(struct kobject *kobject);
++ssize_t kobj_mcp_show(struct kobject *kobject, struct attribute *attr,char *buf);
++ssize_t kobj_mcp_store(struct kobject *kobject,struct attribute *attr,const char *buf, size_t count);
++
++struct attribute test_attr = {
++        .name = "kobject_mcp",
++        .mode = S_IRWXUGO,
++};
++ 
++static struct attribute *def_attrs[] = {
++        &test_attr,
++        NULL,
++};
++ 
++struct sysfs_ops obj_mcp_sysops =
++{
++        .show = kobj_mcp_show,
++        .store = kobj_mcp_store,
++};
++ 
++struct kobj_type ktype = 
++{
++        .release = obj_mcp_release,
++        .sysfs_ops=&obj_mcp_sysops,
++        .default_attrs=def_attrs,
++};
++ 
++void obj_mcp_release(struct kobject *kobject)
++{
++        printk("obj_mcp_release: release .\n");
++}
++
++ssize_t kobj_mcp_store(struct kobject *kobject,struct attribute *attr,const char *buf, size_t count)
++{
++        printk("havestore\n");
++        printk("write: %s\n",buf);
++        return count;
++}
++
++struct kobject kobj;
++static int kobj_mcp_init(void)
++{
++	int ret;
++		MCP_DEBUG("%s %d\n", __func__, __LINE__);
++       ret =  kobject_init_and_add(&kobj,&ktype,NULL,"kobject_mcp");
++        return 0;
++}
++ 
++static void kobj_mcp_exit(void)
++{
++		MCP_DEBUG("%s %d\n", __func__, __LINE__);
++        kobject_del(&kobj);
++}
++
++static struct mcp9800 {
++	struct device *dev;
++	unsigned int r_times;
++	unsigned char temperatures[ELEMENTS];
++#ifdef CONFIG_MACH_MX6Q_PANDA
++	int irq;
++#endif
++}mcp_res;
++
++static int mcp9800_read(struct device *dev, void *data, uint8_t off, uint8_t len)
++{
++	struct i2c_client *client = to_i2c_client(dev);
++	struct i2c_msg msgs[] = {
++		{
++			.addr = client->addr,
++			.flags = 0,
++			.len = 1,
++			.buf = &off,
++		}, {
++			.addr = client->addr,
++			.flags = I2C_M_RD,
++			.len = len,
++			.buf = data,
++		}
++	};
++
++	if (i2c_transfer(client->adapter, msgs, 2) == 2)
++		return 0;
++
++	return -EIO;
++}
++
++ssize_t kobj_mcp_show(struct kobject *kobject, struct attribute *attr,char *buf)
++{
++		int ret;
++		uint8_t value;
++
++		ret = mcp9800_read(mcp_res.dev, &value, MCP_TEMP, 1);
++		//MCP_DEBUG("---------temperature:%X \n", value);
++       	//sprintf(buf,"board temp: %X\n", value);		
++        sprintf(buf, "%d\n", value);
++        return strlen(buf)+2;
++}
++
++#ifdef CONFIG_MACH_MX6Q_PANDA
++static int mcp9800_write(struct device *dev, void *data, uint8_t off, uint8_t len)
++{
++	struct i2c_client *client = to_i2c_client(dev);
++	uint8_t buffer[len + 1];
++
++	buffer[0] = off;
++	memcpy(&buffer[1], data, len);
++
++	if (i2c_master_send(client, buffer, len + 1) == len + 1)
++		return 0;
++
++	return -EIO;
++}
++#endif
++
++//zy add
++#ifdef CONFIG_MACH_MX6Q_PANDA
++static irqreturn_t mcp9800_int(int irq, void *dev_id)
++{
++	//MCP_DEBUG("%s called\n", __func__);
++	int flags = 0;
++	int gpio = irq_to_gpio(irq);
++	flags = gpio_get_value(gpio);
++	//MCP_DEBUG(" flags = %d\n", flags);
++	if(flags == 0)
++		gpio_set_value(PANDA_FAN_EN, FAN_ENABLE);
++	else
++		gpio_set_value(PANDA_FAN_EN, FAN_DISABLE);
++	
++	return IRQ_HANDLED;
++}
++#endif
++//zy add end
++static int misc_open (struct inode *inodp, struct file *filp)
++{
++		//int i;
++		int error;
++		unsigned char reg;
++
++		printk("device opened!\n");
++		for(mcp_res.r_times = 0; mcp_res.r_times < ELEMENTS; mcp_res.r_times += 1){
++				error = mcp9800_read(mcp_res.dev, &reg, MCP_TEMP, 1);
++				if (error){
++						MCP_DEBUG("-----------------------i2c read error!\n");
++						return error;
++				}
++			mcp_res.temperatures[mcp_res.r_times] = reg;
++		}
++
++		/*
++		for(i=0; i<ELEMENTS; i++)
++				MCP_DEBUG("temperature  %d degree", mcp_res.temperatures[i]);
++		*/
++
++		return 0;
++}
++
++static int average_temp(void)
++{
++	int i, total=0;
++	int aver_tp;
++
++	for(i=0; i<ELEMENTS; i++)
++		total += mcp_res.temperatures[i];
++	aver_tp = total / ELEMENTS;
++
++	return aver_tp;
++}
++
++static ssize_t misc_read (struct file *filp, char __user *buf, size_t cnt, loff_t *fpos)
++{
++		unsigned char reg;
++		int value, ret;
++
++		printk("device readed!\n");
++		ret = mcp9800_read(mcp_res.dev, &reg, MCP_TEMP, 1);
++		if (ret){
++				printk(KERN_DEBUG "i2c read error!\n");
++				return ret;
++		}
++		mcp_res.r_times += 1;
++		mcp_res.temperatures[mcp_res.r_times % ELEMENTS] = reg;
++		value = average_temp();
++
++		if(access_ok(VERIFY_WRITE,buf, sizeof(value))){
++				MCP_DEBUG("sizeof(value):%ld, access ok! \n", sizeof(value));
++				ret = copy_to_user(buf, &value, sizeof(value));
++				MCP_DEBUG("%s temperature  %u degree. ret:%d\n", __func__, value, ret);
++		}else{
++			ret = -EACCES;
++		}
++
++		return ret;
++}
++
++ssize_t misc_write (struct file *filp, const char __user *buf, size_t cnt, loff_t *fpos)
++{
++		MCP_DEBUG("%s called\n", __func__);
++
++		return -ENOMEM;
++}
++
++long misc_ioctl (struct file *filp, unsigned int cmd, unsigned long arg)
++{
++		MCP_DEBUG("%s called\n", __func__);
++		return 0;
++}
++
++int misc_release (struct inode *inodp, struct file *filp)
++{
++		printk("device closed!\n");	
++		return 0;
++}
++
++struct file_operations misc_fops = {
++		.owner = THIS_MODULE,
++		.open = misc_open,
++		.read = misc_read,	
++		.write = misc_write,
++		.release = misc_release,
++		.unlocked_ioctl = misc_ioctl,
++};
++
++static struct miscdevice misc = {
++		.minor = MISC_DYNAMIC_MINOR,
++		.name = MISC_NAME,
++		.fops = &misc_fops,
++};
++
++static int mcp9800_probe(struct i2c_client *client, const struct i2c_device_id *id)
++{
++	struct device *dev = &client->dev;
++	uint8_t reg, i;
++	int error; 
++	printk(KERN_ALERT "%s %d\n", __func__, __LINE__);
++#ifdef CONFIG_MACH_MX6Q_PANDA
++	int ret;
++	uint8_t value, value1;
++	int temp;
++#endif	
++	mcp_res.dev = &client->dev;
++#ifdef CONFIG_MACH_MX6Q_PANDA
++	mcp_res.irq = client->irq;
++	
++	ret = gpio_request(irq_to_gpio(client->irq), "mcp9800_gpio");
++	if(ret)
++		MCP_DEBUG("---------ret----------------:%d \n", ret);
++	//gpio_direction_output(irq_to_gpio(client->irq), 0);
++//	pr_alert("----------------------------get into probe-------------------------------------\n");
++#endif
++	if (!i2c_check_functionality(client->adapter, I2C_FUNC_I2C)){
++		MCP_DEBUG("warning!!! i2c_check_functionality error! \n");
++		return -ENODEV;
++	}
++
++//zy add
++#ifdef CONFIG_MACH_MX6Q_PANDA
++	ret = mcp9800_read(dev, &value1, MCP_CONF, 1);
++	//MCP_DEBUG("---------MCP_CONF----------------:%x \n", value1);
++	value1 |= 0x1;
++	mcp9800_write(dev, &value1, MCP_CONF, 1);
++	ret = mcp9800_read(dev, &value1, MCP_CONF, 1);
++	//MCP_DEBUG("---------MCP_CONF----------------:%x \n", value1);
++	msleep(100);
++	//ret = mcp9800_read(dev, &value1, MCP_CONF, 1);
++	//MCP_DEBUG("---------MCP_CONF----------------:%x \n", value1);
++	value1 &= ~0x01;
++	mcp9800_write(dev, &value1, MCP_CONF, 1);
++	
++	value1 |= 0x02;
++	mcp9800_write(dev, &value1, MCP_CONF, 1);
++	
++	ret = mcp9800_read(dev, &value1, MCP_CONF, 1);
++	//MCP_DEBUG("---------MCP_CONF----------------:%x \n", value1);
++	
++	ret = mcp9800_read(dev, &value, MCP_LIMIT, 1);
++	//MCP_DEBUG("---------temperature MCP_LIMIT----------------:%x \n", value);
++	//temp = 0x5;
++	temp = 0x37;
++	mcp9800_write(dev, &temp, MCP_LIMIT, 2);
++	ret = mcp9800_read(dev, &value, MCP_LIMIT, 1);
++	//MCP_DEBUG("---------temperature MCP_LIMIT----------------:%x \n", value);
++	
++	ret = mcp9800_read(dev, &value, MCP_HYST, 1);
++	//MCP_DEBUG("---------temperature MCP_HYST----------------:%x \n", value);
++	//temp = 0x00;
++	temp = 0x2D;
++	mcp9800_write(dev, &temp, MCP_HYST, 2);
++	ret = mcp9800_read(dev, &value, MCP_HYST, 1);
++	//MCP_DEBUG("---------temperature MCP_HYST----------------:%x \n", value);
++	
++	ret = request_irq(mcp_res.irq, mcp9800_int, IRQF_TRIGGER_RISING | IRQF_TRIGGER_FALLING, "mcp9800_irq", &mcp_res);
++	if(ret)
++	{
++		MCP_DEBUG("mcp9800_irq error!");
++	}
++#endif
++//zy add end	
++	/* get temperature and configs */
++	for(i=0; i<6; i++){
++			error = mcp9800_read(dev, &reg, MCP_TEMP, 1);
++			if (error){
++					MCP_DEBUG("-----------------------i2c read error!\n");
++					return error;
++			}
++			MCP_DEBUG("--------------temperature:%X \n", reg);
++			msleep(300);
++	}
++
++#ifdef PRINT_CONFIG
++	MCP_DEBUG("the values:");
++	for(i=0; i<4; i++){	/*read all the registers*/
++			error = mcp9800_read(dev, &reg, i, 1);
++			MCP_DEBUG("\t reg %X: %X \t", i, reg);
++	}
++
++	/* config register */
++	//error = mcp9800_write(dev, &reg, CONFIG, 1);	//config
++#endif
++
++	kobj_mcp_init(); 
++	MCP_DEBUG("%s %d\n", __func__, __LINE__);
++	return misc_register(&misc);
++}
++
++static int mcp9800_remove(struct i2c_client *client)
++{
++	MCP_DEBUG("\n driver removed!\n");
++	kobj_mcp_exit();
++	misc_deregister(&misc);
++//zy add
++#ifdef CONFIG_MACH_MX6Q_PANDA
++	free_irq(mcp_res.irq, &mcp_res);
++	gpio_free(irq_to_gpio(mcp_res.irq));
++#endif
++//zy add end
++	return 0;
++}
++
++static const struct i2c_device_id mcp9800_id[] = {
++	{ "temp-mcp9800", 0 },
++	{ }
++};
++MODULE_DEVICE_TABLE(i2c, mcp9800_id);
++#ifdef CONFIG_OF 
++static const struct of_device_id mcp9800_of_match[] = {
++     { .compatible = "rocktech,temp-mcp9800" },
++     {}
++};
++MODULE_DEVICE_TABLE(of, mcp9800_of_match);
++#endif
++
++static struct i2c_driver mcp9800_driver = {
++	.driver = {
++		.name	= "temp-mcp9800",
++		#ifdef CONFIG_OF
++		.of_match_table = of_match_ptr(mcp9800_of_match),
++		#endif
++		.owner	= THIS_MODULE,
++	},
++	.probe		= mcp9800_probe,
++	.remove		= mcp9800_remove,
++	.id_table	= mcp9800_id,
++};
++#ifdef CONFIG_OF 
++module_i2c_driver(mcp9800_driver);
++#else
++static __init int mcp9800_init(void)
++{
++	int ret = i2c_add_driver(&mcp9800_driver);
++printk(KERN_ALERT "%s %d ret = %d\n", __func__, __LINE__, ret);
++	return ret;
++}
++module_init(mcp9800_init);
++static __exit void mcp9800_exit(void)
++{
++	printk(KERN_ALERT "%s %d\n", __func__, __LINE__);
++	misc_deregister(&misc);
++	i2c_del_driver(&mcp9800_driver);
++}
++module_exit(mcp9800_exit);
++#endif 
++MODULE_AUTHOR("Wangchao, chao.wang@rockemb.com");
++MODULE_DESCRIPTION("mcp9800 driver");
++MODULE_LICENSE("GPL");

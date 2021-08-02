@@ -1,0 +1,26 @@
+DESCRIPTION = "Rocktech ISG503 U-Boot"
+LICENSE = "GPLv2+"
+LIC_FILES_CHKSUM = "file://Licenses/README;md5=30503fd321432fc713238f582193b78e"
+require recipes-bsp/u-boot/u-boot.inc
+UBOOT_KCONFIG_SUPPORT = "1"
+inherit resin-u-boot
+# rework meta-resin patch whose context is different now in u-boot v2019.4
+SRC_URI_remove = "file://resin-specific-env-integration-kconfig.patch"
+
+FILESEXTRAPATHS_append := ":${THISDIR}/files"
+
+DEPENDS_append = " bison-native rkbin "
+
+SRC_URI = " \
+    git://github.com/u-boot/u-boot \
+    file://idbloader.bin  \
+	file://uboot.img  \
+"
+SRCREV_isg-503  = "v2019.10"
+S = "${WORKDIR}/git"
+do_compile() {
+}
+do_deploy_append() {
+    install ${S}/idbloader.bin ${DEPLOYDIR}
+    install ${S}/uboot.img ${DEPLOYDIR}
+}

@@ -1,0 +1,13 @@
+diff --git a/arch/arm64/boot/dts/rockchip/px30.dtsi b/arch/arm64/boot/dts/rockchip/px30.dtsi
+index d5dce6e38021..4bf17c0f6480 100755
+--- a/arch/arm64/boot/dts/rockchip/px30.dtsi
++++ b/arch/arm64/boot/dts/rockchip/px30.dtsi
+@@ -739,7 +739,7 @@
+ 		reg-io-width = <4>;
+ //		dmas = <&dmac 10>, <&dmac 11>;
+ 		pinctrl-names = "default";
+-		pinctrl-0 = <&uart5_xfer &uart5_cts &uart5_rts>;
++		pinctrl-0 = <&uart5_xfer>;
+ 		status = "disabled";
+ 	};
+ 

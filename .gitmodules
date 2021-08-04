@@ -7,9 +7,9 @@
 [submodule "layers/meta-balena"]
 	path = layers/meta-balena
 	url = https://github.com/balena-os/meta-balena.git
-[submodule "layers/meta-openembedded"]
-	path = layers/meta-openembedded
-	url = https://github.com/openembedded/meta-openembedded.git
 [submodule "layers/poky"]
 	path = layers/poky
 	url = https://github.com/balena-os/poky
+[submodule "layers/meta-openembedded"]
+	path = layers/meta-openembedded
+	url = https://github.com/openembedded/meta-openembedded.git

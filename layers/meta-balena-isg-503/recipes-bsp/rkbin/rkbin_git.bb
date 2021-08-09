@@ -7,18 +7,15 @@ LIC_FILES_CHKSUM = "file://LICENSE.TXT;md5=564e729dd65db6f65f911ce0cd340cf9"
 NO_GENERIC_LICENSE[BINARY] = "LICENSE.TXT"
 
 SRC_URI = " \
-    git://github.com/armbian/rkbin \
-    file://PX30TRUST.ini \
+    git://github.com/RockSupport/rkbin;protocol=file;branch=main \
 "
-SRCREV = "cd0c2bbc16eba65c6a996809e8026f01f7e435d2"
+SRCREV = "de4e6ef352a8ba6b25163ed84a3e2a53303cd840"
 
 S = "${WORKDIR}/git"
 
 do_configure[noexec] = "1"
 
 do_compile() {
-    cp ${WORKDIR}/PX30TRUST.ini .
-    tools/trust_merger PX30TRUST.ini
 }
 
 do_deploy () {
@@ -30,4 +27,4 @@ do_deploy () {
     install -m 755 ${S}/trust.img ${DEPLOYDIR}/rkbin
 }
 
-addtask deploy before do_build after do_compile
+addtask do_deploy before do_build after do_compile

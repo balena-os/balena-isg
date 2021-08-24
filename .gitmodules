@@ -13,3 +13,6 @@
 [submodule "layers/meta-openembedded"]
 	path = layers/meta-openembedded
 	url = https://github.com/openembedded/meta-openembedded.git
+[submodule "layers/meta-balena-isg-503"]
+	path = layers/meta-balena-isg-503
+	url = https://github.com/RockSupport/meta-balena-isg-503.git

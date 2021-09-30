@@ -6,4 +6,5 @@ FILESEXTRAPATHS_append := ":${THISDIR}/files"
 
 SRC_URI += " \
     file://0001-Integrate-with-Balena-u-boot-environment.patch \
+    file://0001-u-boot-Enable-SETEXPR.patch \
 "

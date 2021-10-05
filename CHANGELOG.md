@@ -1,6 +1,11 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.85.2+rev2
+## (2021-10-05)
+
+* isg-503: Mark device as community supported [Alexandru Costache]
+
 # v2.85.2+rev1
 ## (2021-10-05)
 

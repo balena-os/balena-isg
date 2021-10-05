@@ -1,4 +1,17 @@
 - commits:
+    - subject: 'isg-503: Mark device as community supported'
+      hash: 49ed0353b808c4f89b5671c79b02888c87705de7
+      body: ''
+      footer:
+        Changelog-entry: 'isg-503: Mark device as community supported'
+        changelog-entry: 'isg-503: Mark device as community supported'
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 2.85.2+rev2
+  date: 2021-10-05T14:09:15.208Z
+- commits:
     - subject: Update meta-balena from v2.83.10 to v2.85.2
       hash: 96a7964d9346b837bdaf33fdef3d55933ace2e76
       body: |

@@ -13,6 +13,7 @@ module.exports =
 	name: 'Rocktech ISG 503'
 	arch: 'aarch64'
 	state: 'released'
+	community: true
 
 	stateInstructions:
 		postProvisioning: postProvisioningInstructions

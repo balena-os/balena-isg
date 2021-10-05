@@ -10,7 +10,7 @@ postProvisioningInstructions = [
 module.exports =
 	version: 1
 	slug: 'isg-503'
-	name: 'ISG 503'
+	name: 'Rocktech ISG 503'
 	arch: 'aarch64'
 	state: 'released'
 

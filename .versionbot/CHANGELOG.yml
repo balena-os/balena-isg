@@ -1,4 +1,17 @@
 - commits:
+    - subject: 'isg-503: Improve provisioning instructions in coffee file'
+      hash: 422a5a2bff57a5ba4c651017d64aab37290c26fe
+      body: ''
+      footer:
+        Changelog-entry: 'isg-503: Improve provisioning instructions in coffee file'
+        changelog-entry: 'isg-503: Improve provisioning instructions in coffee file'
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 2.85.2+rev5
+  date: 2021-11-11T16:54:48.967Z
+- commits:
     - subject: 'layers/meta-isg: Update BSP layer to include u-boot fixes for reboot'
       hash: ca522a1e526dd69b0b7795e23f4c8b64c25f809f
       body: ''

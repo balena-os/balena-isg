@@ -10,7 +10,7 @@ BALENA_STORAGE = "overlay2"
 #OS_DEVELOPMENT = "1"
 
 # Set this to make build system generate resinhup bundles
-#RESINHUP ?= "yes"
+#BALENAHUP ?= "yes"
 
 # Set this to change the supervisor tag used
 #SUPERVISOR_TAG ?= "master"

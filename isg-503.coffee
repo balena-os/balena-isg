@@ -1,8 +1,12 @@
 deviceTypesCommon = require '@resin.io/device-types/common'
 { networkOptions, commonImg, instructions } = deviceTypesCommon
 
+BOARD_POWERON = 'Power on the device'
+BOARD_POWEROFF = 'After flashing is completed the status LED will stop blinking, the ethernet LEDs will turn off and the device will enter Post Provisioning state in the dashboard'
+
 postProvisioningInstructions = [
-	instructions.BOARD_SHUTDOWN
+	BOARD_POWERON
+	BOARD_POWEROFF
 	instructions.REMOVE_INSTALL_MEDIA
 	instructions.BOARD_REPOWER
 ]

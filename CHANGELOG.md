@@ -1,6 +1,11 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.85.2+rev4
+## (2021-11-11)
+
+* layers/meta-isg: Update BSP layer to include u-boot fixes for reboot [RockSupport]
+
 # v2.85.2+rev3
 ## (2021-10-26)
 

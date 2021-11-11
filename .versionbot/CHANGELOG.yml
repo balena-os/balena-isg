@@ -1,4 +1,17 @@
 - commits:
+    - subject: 'layers/meta-isg: Update BSP layer to include u-boot fixes for reboot'
+      hash: ca522a1e526dd69b0b7795e23f4c8b64c25f809f
+      body: ''
+      footer:
+        Changelog-entry: 'layers/meta-isg: Update BSP layer to include u-boot fixes for reboot'
+        changelog-entry: 'layers/meta-isg: Update BSP layer to include u-boot fixes for reboot'
+        Signed-off-by: Rocktech Support <support@rockemb.com>
+        signed-off-by: Rocktech Support <support@rockemb.com>
+      author: RockSupport
+      nested: []
+  version: 2.85.2+rev4
+  date: 2021-11-11T01:36:20.051Z
+- commits:
     - subject: Update balena-yocto-scripts from v1.14.8 to v1.15.5
       hash: a08bd49ece82e15b53ef74cd5f895afec735cb33
       body: |

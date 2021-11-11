@@ -1,0 +1,38 @@
+From ffdcc28c388de27d35e8c525a31f06bcf223bde0 Mon Sep 17 00:00:00 2001
+From: Alexandru Costache <alexandru@balena.io>
+Date: Thu, 11 Nov 2021 15:03:59 +0100
+Subject: [PATCH] fat: Fix sporadic file write failure when saving bootcount
+
+Backported from https://patchwork.ozlabs.org/patch/924967/
+
+fatwrite command can fail under
+specific circumstances, like for
+instance when there were around
+20 files in the FAT filesystem. This
+was caused by an incorrect cast.
+
+Failure log:
+Error Invalid FAT entry 0x3ffffffa
+
+Upstream-status: Inappropriate [backport]
+Signed-off-by: Alexandru Costache <alexandru@balena.io>
+---
+ include/fat.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/include/fat.h b/include/fat.h
+index bdeda95e6d..a4138824de 100644
+--- a/include/fat.h
++++ b/include/fat.h
+@@ -182,7 +182,7 @@ static inline u32 clust_to_sect(fsdata *fsdata, u32 clust)
+ 	return fsdata->data_begin + clust * fsdata->clust_size;
+ }
+ 
+-static inline u32 sect_to_clust(fsdata *fsdata, u32 sect)
++static inline u32 sect_to_clust(fsdata *fsdata, int sect)
+ {
+ 	return (sect - fsdata->data_begin) / fsdata->clust_size;
+ }
+-- 
+2.17.1
+

@@ -1,4 +1,30 @@
 - commits:
+    - subject: 'u-boot: Backport fatwrite fix'
+      hash: a0e8f50f3c2121c239d84af37b06162182b42107
+      body: |
+        fatwrite command can fail under
+        specific circumstances, like for
+        instance when there were around
+        20 files in the filesystem. This
+        was caused by an incorrect cast.
+
+        We backport a patch from upstream
+        to avoid potential failure to boot
+        after HUP, when bootcount is saved
+        to the FAT partition.
+
+        Failure log:
+            Error Invalid FAT entry 0x3ffffffa
+      footer:
+        Changelog-entry: 'u-boot: Backport fatwrite fix'
+        changelog-entry: 'u-boot: Backport fatwrite fix'
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 2.85.2+rev6
+  date: 2021-11-12T06:42:02.934Z
+- commits:
     - subject: 'isg-503: Improve provisioning instructions in coffee file'
       hash: 422a5a2bff57a5ba4c651017d64aab37290c26fe
       body: ''

@@ -1,6 +1,11 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.85.2+rev6
+## (2021-11-12)
+
+* u-boot: Backport fatwrite fix [Alexandru Costache]
+
 # v2.85.2+rev5
 ## (2021-11-11)
 

@@ -1,6 +1,11 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.85.2+rev8
+## (2021-11-12)
+
+* balena-image: improve comment [Alexandru Costache]
+
 # v2.85.2+rev7
 ## (2021-11-12)
 

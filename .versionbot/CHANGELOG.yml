@@ -1,4 +1,17 @@
 - commits:
+    - subject: 'balena-image: improve comment'
+      hash: f41b8c964833698cd4048c9dad26e67176ba9d71
+      body: ''
+      footer:
+        Changelog-entry: 'balena-image: improve comment'
+        changelog-entry: 'balena-image: improve comment'
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 2.85.2+rev8
+  date: 2021-11-12T11:14:44.294Z
+- commits:
     - subject: 'recipes-bsp/u-boot: Remove BSP commit that breaks rollback-altboot'
       hash: 3dba87dc3d35237ba6e79985d2fd57235a072ce4
       body: |

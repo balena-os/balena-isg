@@ -1,4 +1,22 @@
 - commits:
+    - subject: 'recipes-bsp/u-boot: Remove BSP commit that breaks rollback-altboot'
+      hash: 3dba87dc3d35237ba6e79985d2fd57235a072ce4
+      body: |
+        This commit converted the decimal number stored in
+        the bootcount environment variable to hex when
+        the environment is updated, and then bootcount comparison
+        fails during the next boot because it cannot compare numbers
+        that use different bases.
+      footer:
+        Changelog-entry: 'recipes-bsp/u-boot: Remove BSP commit that breaks rollback-altboot'
+        changelog-entry: 'recipes-bsp/u-boot: Remove BSP commit that breaks rollback-altboot'
+        Signd-off-by: Alexandru Costache <alexandru@balena.io>
+        signd-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 2.85.2+rev7
+  date: 2021-11-12T10:40:13.696Z
+- commits:
     - subject: 'u-boot: Backport fatwrite fix'
       hash: a0e8f50f3c2121c239d84af37b06162182b42107
       body: |

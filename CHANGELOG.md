@@ -1,6 +1,11 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.85.2+rev7
+## (2021-11-12)
+
+* recipes-bsp/u-boot: Remove BSP commit that breaks rollback-altboot [Alexandru Costache]
+
 # v2.85.2+rev6
 ## (2021-11-12)
 

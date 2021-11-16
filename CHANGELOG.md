@@ -1,6 +1,11 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.85.2+rev9
+## (2021-11-16)
+
+* isg-503: remove led from coffee file [Alexandru Costache]
+
 # v2.85.2+rev8
 ## (2021-11-12)
 

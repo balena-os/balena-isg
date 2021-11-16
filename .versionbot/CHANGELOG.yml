@@ -1,4 +1,19 @@
 - commits:
+    - subject: 'isg-503: remove led from coffee file'
+      hash: 42af817efda508bc506f8cd67474a4c65eb0b4a7
+      body: |
+        Because LED is not specified in
+        the supervisor config.
+      footer:
+        Changelog-entry: 'isg-503: remove led from coffee file'
+        changelog-entry: 'isg-503: remove led from coffee file'
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 2.85.2+rev9
+  date: 2021-11-16T10:20:26.230Z
+- commits:
     - subject: 'balena-image: improve comment'
       hash: f41b8c964833698cd4048c9dad26e67176ba9d71
       body: ''

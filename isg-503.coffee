@@ -32,7 +32,6 @@ module.exports =
 		windows: 'https://www.balena.io/docs/learn/getting-started/isg-503/nodejs/'
 		osx: 'https://www.balena.io/docs/learn/getting-started/isg-503/nodejs/'
 		linux: 'https://www.balena.io/docs/learn/getting-started/isg-503/nodejs/'
-	supportsBlink: true
 
 	options: [ networkOptions.group ]
 

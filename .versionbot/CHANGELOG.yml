@@ -1,4 +1,17 @@
 - commits:
+    - subject: Add info for contributing to this repo
+      hash: 396b1751b9390a86e33179f1db70ef612b0c168e
+      body: ''
+      footer:
+        Changelog-entry: Add info for contributing to this repo
+        changelog-entry: Add info for contributing to this repo
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2.85.2+rev10
+  date: 2022-01-17T10:20:22.069Z
+- commits:
     - subject: 'isg-503: remove led from coffee file'
       hash: 42af817efda508bc506f8cd67474a4c65eb0b4a7
       body: |

@@ -1,6 +1,11 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.85.2+rev10
+## (2022-01-17)
+
+* Add info for contributing to this repo [Florin Sarbu]
+
 # v2.85.2+rev9
 ## (2021-11-16)
 

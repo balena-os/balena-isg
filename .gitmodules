@@ -16,3 +16,6 @@
 [submodule "layers/meta-isg"]
 	path = layers/meta-isg
 	url = https://github.com/RockSupport/meta-isg.git
+[submodule "contracts"]
+	path = contracts
+	url = https://github.com/balena-io/contracts.git

@@ -1,6 +1,237 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.85.2+rev14
+## (2022-07-13)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 5e003d52ac8e118af3cce662362d45f780ade704 [renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.19.10
+> ### (2022-06-29)
+> 
+> * balena-deploy: Use balena-img instead of resin-img [Alex Gonzalez]
+> * Global rename from dockerhub resin to balena accounts [Alex Gonzalez]
+> * automation: Stop deploying images to dockerhub [Alex Gonzalez]
+> 
+> ## balena-yocto-scripts-1.19.9
+> ### (2022-06-28)
+> 
+> * balena-deploy: pin balena-img to v4.1.2 [Joseph Kogut]
+> * balena-deploy: s/resin-img/balena-img [Joseph Kogut]
+> 
+> ## balena-yocto-scripts-1.19.8
+> ### (2022-06-01)
+> 
+> * balena-lib: release_finalize: Do not retag phase for ESR branch patch [Alex Gonzalez]
+> 
+> ## balena-yocto-scripts-1.19.7
+> ### (2022-06-01)
+> 
+> * balena-lib: balena_lib_release_finalize: Pass the correct arguments [Alex Gonzalez]
+> * balena-lib: Tag ESR fleets with patch independent tags [Alex Gonzalez]
+> 
+> ## balena-yocto-scripts-1.19.6
+> ### (2022-05-24)
+> 
+> * balena-lib: Check versions before finalizing [Alex Gonzalez]
+> * balena-deploy-block: Do not always finalise on deploy [Alex Gonzalez]
+> * balena-deploy-block: Add OS version to contract [Alex Gonzalez]
+> * balena-deploy: Generate OS contract if not available [Alex Gonzalez]
+> * balena-lib: Build contracts [Alex Gonzalez]
+> * Add generate-oscontract script [Alex Gonzalez]
+> 
+> ## balena-yocto-scripts-1.19.5
+> ### (2022-05-19)
+> 
+> * jenkins_build: Finalize when required [Alex Gonzalez]
+> * balena-lib: Finalise release before tagging [Alex Gonzalez]
+> * balena-api: Add function to get final state of release [Alex Gonzalez]
+> * balena-lib: Extract release finalization as function [Alex Gonzalez]
+> * Update balena-cli version to latest [Alex Gonzalez]
+> * balena-deploy: Fix header on balena_deploy_block() [Alex Gonzalez]
+> 
+> ## balena-yocto-scripts-1.19.4
+> ### (2022-04-28)
+> 
+> * balena-api.inc: fix 'fatal: unsafe repository' [Florin Sarbu]
+> 
+> ## balena-yocto-scripts-1.19.3
+> ### (2022-04-26)
+> 
+> * balena-lib: fix 445d6d1fcfce97f85ffcfedc0083eb658a734321 [Florin Sarbu]
+> 
+> ## balena-yocto-scripts-1.19.2
+> ### (2022-04-21)
+> 
+> * balena-lib: fix 'fatal: unsafe repository' [Joseph Kogut]
+> 
+> ## balena-yocto-scripts-1.19.1
+> ### (2022-04-14)
+> 
+> * deploy: ensure deployRawArtifact is empty instead of null [Joseph Kogut]
+> 
+> ## balena-yocto-scripts-1.19.0
+> ### (2022-04-13)
+> 
+> * deploy: push image variant artifacts [Joseph Kogut]
+> 
+> ## balena-yocto-scripts-1.18.0
+> ### (2022-04-01)
+> 
+> * Bump balena-cli to v.Latest [ab77]
+> 
+> ## balena-yocto-scripts-1.17.12
+> ### (2022-03-29)
+> 
+> * Remove superfluous preload flag [ab77]
+> 
+> ## balena-yocto-scripts-1.17.11
+> ### (2022-03-29)
+> 
+> * Unattended preload operation [ab77]
+> 
+> ## balena-yocto-scripts-1.17.10
+> ### (2022-03-28)
+> 
+> * Pass environment to docker [ab77]
+> 
+> ## balena-yocto-scripts-1.17.9
+> ### (2022-03-25)
+> 
+> * automation: ami: make BALENA_PRELOAD_COMMIT optional [Joseph Kogut]
+> 
+> ## balena-yocto-scripts-1.17.8
+> ### (2022-03-15)
+> 
+> * balena-deploy: s/resin-flasher/balena-flasher [Joseph Kogut]
+> 
+> ## balena-yocto-scripts-1.17.7
+> ### (2022-03-15)
+> 
+> * jenkins_generate_ami: surface preload app commit as variable [Joseph Kogut]
+> 
+> ## balena-yocto-scripts-1.17.6
+> ### (2022-03-08)
+> 
+> * barys: Remove RESINHUP setting [Alex Gonzalez]
+> 
+> ## balena-yocto-scripts-1.17.5
+> ### (2022-03-08)
+> 
+> * balena-deploy: Avoid patching test suites config.js during deploy [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.17.4
+> ### (2022-03-03)
+> 
+> * Init and update submodules when switching meta-balena branches [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.17.3
+> ### (2022-03-02)
+> 
+> * jenkins_build: Use recurse-submodules when checking out meta-balena [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.17.2
+> ### (2022-02-25)
+> 
+> * prepare-and-start: Remove balena login [Alex Gonzalez]
+> 
+> ## balena-yocto-scripts-1.17.1
+> ### (2022-01-27)
+> 
+> * balena-deploy.inc: Do no deploy device logo to deprecated endpoint [Florin Sarbu]
+> 
+> ## balena-yocto-scripts-1.17.0
+> ### (2022-01-20)
+> 
+> * balena-lib: Fix fetching meta-balena base version [Alex Gonzalez]
+> * jenkins_build-block: Use true/false for ESR variable [Alex Gonzalez]
+> * balena-deploy-block: Label ESR hostapps [Alex Gonzalez]
+> * balena-api: add balena_api_fetch_fleet_tag [Alex Gonzalez]
+> * balena-api: Set policy on ESR hostapps [Alex Gonzalez]
+> * balena-deploy: Pass ESR variable when creating apps [Alex Gonzalez]
+> 
+> ## balena-yocto-scripts-1.16.4
+> ### (2022-01-18)
+> 
+> * balena-deploy: Deploy passing the latest meta-balena version and not tag [Alex Gonzalez]
+> * balena-lib: Add balena_lib_get_meta_balena_base_version [Alex Gonzalez]
+> 
+> ## balena-yocto-scripts-1.16.3
+> ### (2022-01-17)
+> 
+> * balena-deploy-block: Check for existing tag only in specific hostapp [Alex Gonzalez]
+> 
+> ## balena-yocto-scripts-1.16.2
+> ### (2022-01-15)
+> 
+> * balena-api: Propagate balena API environment, token and OS organization [Alex Gonzalez]
+> * balena-build.sh: Propagate balena API environment and token [Alex Gonzalez]
+> * prepare-and-start: Propagate balena API environment and token [Alex Gonzalez]
+> 
+> ## balena-yocto-scripts-1.16.1
+> ### (2022-01-11)
+> 
+> * revert_overrides: Add intel-quark to architecture overrides [Alex Gonzalez]
+> 
+> ## balena-yocto-scripts-1.16.0
+> ### (Invalid date)
+> 
+> * balena-deploy: Check for file existence before deploying [Alex Gonzalez]
+> * balena-deploy-block: Check existence of tag before re-deploying [Alex Gonzalez]
+> * balena-api: Add function to check the existence of a release tag [Alex Gonzalez]
+> * balena-deploy-block: Finalize releases when deployed [Alex Gonzalez]
+> * Accept deployments without balena.yml [Alex Gonzalez]
+> * jenkins_generate_ami: Remove variant from image name [Alex Gonzalez]
+> * balena-build.sh: Stop building OS variants [Alex Gonzalez]
+> * jenkins_build.sh: Remove buildFlavor [Alex Gonzalez]
+> * jenkins_build-blocks: Remove variant build option [Alex Gonzalez]
+> * balena-deploy: Stop using .dev/.prod variant suffixes [Alex Gonzalez]
+> * balena-deploy-block: Stop tagging hostapp releases with variant [Alex Gonzalez]
+> * balena-lib: Use externalVersion to match contracts [Alex Gonzalez]
+> * jenkins_build: Deploy hostapp like any other block [Alex Gonzalez]
+> * jenkins_build-blocks: Separate block build release deployment [Alex Gonzalez]
+> * balena-deploy-block: Use release versioning [Alex Gonzalez]
+> * jenkins_build: Remove discontinued check [Alex Gonzalez]
+> * balena-deploy: Do not deploy discontinued device types [Alex Gonzalez]
+> * balena-deploy: Discontinued device types use meta-balena version [Alex Gonzalez]
+> * balena-deploy: Adapt balena_deploy_block to release versioning and use it [Alex Gonzalez]
+> * balena-build-block: Remove image release [Alex Gonzalez]
+> * balena-api: Use release revision for fetchers [Alex Gonzalez]
+> * jenkins_build-block: Remove release version API setter [Alex Gonzalez]
+> * balena-api: Remove release version API setter [Alex Gonzalez]
+> * balena-lib: Use release versioning [Alex Gonzalez]
+> 
+> ## balena-yocto-scripts-1.15.10
+> ### (2021-12-02)
+> 
+> * balena-deploy: Set leviathan networkWireless mode based on device slug [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.15.9
+> ### (2021-11-26)
+> 
+> * Substitute the worker types for generic device slugs [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.15.8
+> ### (2021-11-03)
+> 
+> * Dockerfile_yocto-build-env: Install Honister host deps [Alexandru Costache]
+> 
+> ## balena-yocto-scripts-1.15.7
+> ### (2021-10-25)
+> 
+> * jenkins_build.sh: Fix deployment for discontinued device types [Alex Gonzalez]
+> * jenkins_build.sh: Remove PRIVATE_DT as it is unused [Alex Gonzalez]
+> * jenkins_build.sh: Fix lint warnings [Alex Gonzalez]
+> 
+> ## balena-yocto-scripts-1.15.6
+> ### (2021-10-21)
+> 
+> * balena-generate-ami.sh: wait for boot partition when preloading AMI [Michal Toman]
+> 
+</details>
+
 # v2.85.2+rev13
 ## (2022-06-08)
 

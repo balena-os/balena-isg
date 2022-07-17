@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update contracts to 4df6bf241e40b34e4d7051c97ba4f9cf1945c45f
+      hash: 362f91571ef8b807bb8444aa4a6ed4a313b68e5a
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 4df6bf241e40b34e4d7051c97ba4f9cf1945c45f
+        changelog-entry: Update contracts to 4df6bf241e40b34e4d7051c97ba4f9cf1945c45f
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "hw.device-type: Add correct tdpzu9 board"
+              hash: 854890e2c4516145bd8e92e9d2f8f8066cb364a5
+              body: |
+                There was a mismatch in between the dir name
+                and the actual slug name.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+          version: contracts-2.0.6
+          title: "'hw.device-type: Add correct tdpzu9 board'"
+          date: 2022-07-17T12:40:20.750Z
+  version: 2.100.2+rev1
+  title: "'Update contracts digest to 4df6bf2'"
+  date: 2022-07-17T15:06:49.612Z
+- commits:
     - subject: Update layers/meta-balena to 7d1109f4319315955a5ef56d062252bbfcdce6f5
       hash: 1d2ac160b01d64a2882504b308a21bc1400e7a77
       body: Update layers/meta-balena

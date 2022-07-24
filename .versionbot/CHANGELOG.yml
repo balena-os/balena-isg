@@ -1,4 +1,52 @@
 - commits:
+    - subject: Update layers/meta-balena to a2ed558c6d2d8362da0b8242ca3b54d1b49acb9c
+      hash: 98565346583581ad0928be326e999e856e1406cf
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to a2ed558c6d2d8362da0b8242ca3b54d1b49acb9c
+        changelog-entry: Update layers/meta-balena to a2ed558c6d2d8362da0b8242ca3b54d1b49acb9c
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "tests: os: engine-socket - wait for response"
+              hash: 61b32c0d36e2c2af387b77bdc398d3294ffedbda
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: meta-balena-2.100.9
+          title: "'tests: os: engine-socket - wait for response before continuing test'"
+          date: 2022-07-22T19:35:54.404Z
+    - subject: Update layers/meta-balena to 9b7bbeaffe87b8dab49eb98163188c77c1934f8e
+      hash: bce1017d2315e98a888f5892f8a1c8f2b84bfe29
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 9b7bbeaffe87b8dab49eb98163188c77c1934f8e
+        changelog-entry: Update layers/meta-balena to 9b7bbeaffe87b8dab49eb98163188c77c1934f8e
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "tests: os: engine-socket - wait for response"
+              hash: 61b32c0d36e2c2af387b77bdc398d3294ffedbda
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: meta-balena-2.100.9
+          title: "'tests: os: engine-socket - wait for response before continuing test'"
+          date: 2022-07-22T19:35:54.404Z
+  version: 2.100.9
+  title: "'Update layers/meta-balena digest to a2ed558'"
+  date: 2022-07-24T02:15:12.702Z
+- commits:
     - subject: Update layers/meta-balena to 39681bd5d8a584784c385a042a707bf1c35b2369
       hash: 241a12fe00e4df42c68f2ac9779cb0dd6f3a7a78
       body: Update layers/meta-balena

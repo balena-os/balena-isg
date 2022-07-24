@@ -1,6 +1,31 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.100.9
+## (2022-07-24)
+
+
+<details>
+<summary> Update layers/meta-balena to a2ed558c6d2d8362da0b8242ca3b54d1b49acb9c [renovate[bot]] </summary>
+
+> ## meta-balena-2.100.9
+> ### (2022-07-22)
+> 
+> * tests: os: engine-socket - wait for response [rcooke-warwick]
+> 
+</details>
+
+
+<details>
+<summary> Update layers/meta-balena to 9b7bbeaffe87b8dab49eb98163188c77c1934f8e [renovate[bot]] </summary>
+
+> ## meta-balena-2.100.9
+> ### (2022-07-22)
+> 
+> * tests: os: engine-socket - wait for response [rcooke-warwick]
+> 
+</details>
+
 # v2.100.7
 ## (2022-07-22)
 

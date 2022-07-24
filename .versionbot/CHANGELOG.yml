@@ -1,4 +1,54 @@
 - commits:
+    - subject: Update layers/meta-balena to dd080e1b54a37355856865fd7a5bb05a69b9592d
+      hash: 74067affd1482d7e4af5354708d287e99d2f180a
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to dd080e1b54a37355856865fd7a5bb05a69b9592d
+        changelog-entry: Update layers/meta-balena to dd080e1b54a37355856865fd7a5bb05a69b9592d
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "tests: cloud: preload: fix no-return-await"
+              hash: 4011daec80bf0e81915bdaf6aafdcd1cd298e5d6
+              body: |
+                Fix ESLint no-return-await
+                https://eslint.org/docs/latest/rules/no-return-await
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+            - subject: "tests: cloud: preload: reduce waitUntil interval"
+              hash: 5b4669444e99788ceff5615ed66edc13719ab70b
+              body: |
+                Specify an explicit retry interval in waitUntil().
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+            - subject: "tests: cloud: multicontainer: reduce waitUntil interval"
+              hash: 92d72c900e0017203a8de21a7de1930528eb25e6
+              body: |
+                Specify an explicit retry interval in waitUntil().
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+          version: meta-balena-2.100.10
+          title: "'Jakogut/cloud fixups'"
+          date: 2022-07-24T10:14:15.412Z
+  version: 2.100.10
+  title: "'Update layers/meta-balena digest to dd080e1'"
+  date: 2022-07-24T17:31:01.419Z
+- commits:
     - subject: Update layers/meta-balena to a2ed558c6d2d8362da0b8242ca3b54d1b49acb9c
       hash: 98565346583581ad0928be326e999e856e1406cf
       body: Update layers/meta-balena

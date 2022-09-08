@@ -1,6 +1,105 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.102.6
+## (2022-09-07)
+
+
+<details>
+<summary> Update layers/meta-balena to 6e63144eb5d665dc51958e0aa791256c48cc0522 [renovate[bot]] </summary>
+
+> ## meta-balena-2.102.6
+> ### (2022-09-07)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 7fe3c5f [renovate[bot]] </summary>
+> 
+>> ### leviathan-2.8.4
+>> #### (2022-09-07)
+>> 
+>> * core: Copy all files/directories except those in dockerignore [Kyle Harding]
+>> * core: Move contracts submodule back to original path [Kyle Harding]
+>> 
+>> ### leviathan-2.8.3
+>> #### (2022-09-07)
+>> 
+>> * patch: Migrate away from config package [Vipul Gupta (@vipulgupta2048)]
+>> 
+>> ### leviathan-2.8.2
+>> #### (2022-09-06)
+>> 
+>> * worker: Pin to stable release 2.5.10 prior to md support [Kyle Harding]
+>> 
+>> ### leviathan-2.8.1
+>> #### (2022-09-03)
+>> 
+>> * patch: Fix contracts name [Vipul Gupta (@vipulgupta2048)]
+>> 
+>> ### leviathan-2.8.0
+>> #### (2022-08-26)
+>> 
+>> * patch: Accept 429 HTTP codes using config file [Vipul Gupta (@vipulgupta2048)]
+>> * minor: Add support for Private Contracts [Vipul Gupta (@vipulgupta2048)]
+>> 
+>> ### leviathan-2.7.4
+>> #### (2022-08-24)
+>> 
+>> * Fix "Declaration emit" error during `npm run docs` [Leandro Motta Barros]
+>> 
+> </details>
+> 
+> 
+</details>
+
+
+<details>
+<summary> Update layers/meta-balena to 827a6fc341fc806ff065bbe1940c9a0f046cc373 [renovate[bot]] </summary>
+
+> ## meta-balena-2.102.6
+> ### (2022-09-07)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 7fe3c5f [renovate[bot]] </summary>
+> 
+>> ### leviathan-2.8.4
+>> #### (2022-09-07)
+>> 
+>> * core: Copy all files/directories except those in dockerignore [Kyle Harding]
+>> * core: Move contracts submodule back to original path [Kyle Harding]
+>> 
+>> ### leviathan-2.8.3
+>> #### (2022-09-07)
+>> 
+>> * patch: Migrate away from config package [Vipul Gupta (@vipulgupta2048)]
+>> 
+>> ### leviathan-2.8.2
+>> #### (2022-09-06)
+>> 
+>> * worker: Pin to stable release 2.5.10 prior to md support [Kyle Harding]
+>> 
+>> ### leviathan-2.8.1
+>> #### (2022-09-03)
+>> 
+>> * patch: Fix contracts name [Vipul Gupta (@vipulgupta2048)]
+>> 
+>> ### leviathan-2.8.0
+>> #### (2022-08-26)
+>> 
+>> * patch: Accept 429 HTTP codes using config file [Vipul Gupta (@vipulgupta2048)]
+>> * minor: Add support for Private Contracts [Vipul Gupta (@vipulgupta2048)]
+>> 
+>> ### leviathan-2.7.4
+>> #### (2022-08-24)
+>> 
+>> * Fix "Declaration emit" error during `npm run docs` [Leandro Motta Barros]
+>> 
+> </details>
+> 
+> 
+</details>
+
 # v2.102.4+rev1
 ## (2022-09-06)
 

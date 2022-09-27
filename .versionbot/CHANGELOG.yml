@@ -1,4 +1,45 @@
 - commits:
+    - subject: Update contracts to 766eb7591fe2b2f2cbc36af68d58627057f38193
+      hash: 9dc6f4ba0732101d33fc85bf70639ec072d16c52
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 766eb7591fe2b2f2cbc36af68d58627057f38193
+        changelog-entry: Update contracts to 766eb7591fe2b2f2cbc36af68d58627057f38193
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: Add node v18.9.1, v16.17.1 and v14.20.1
+              hash: 3d17a04da87495bc26f6aaabb4e90baaa8f0a349
+              body: ""
+              footer:
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+            - subject: Add Golang v1.19.1 and v1.18.6
+              hash: 1f985fb82514dbeb8c9cddaa66efc8eb31ab9a30
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+          version: contracts-2.0.17
+          title: "'Few base images updates'"
+          date: 2022-09-27T20:03:39.091Z
+    - subject: Update layers/meta-balena to d17b08668a56aa67c7b55594c3c910e66fbd4baf
+      hash: 6a16efc145aa5f399a8b50062407c29858a2da2f
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to d17b08668a56aa67c7b55594c3c910e66fbd4baf
+        changelog-entry: Update layers/meta-balena to d17b08668a56aa67c7b55594c3c910e66fbd4baf
+      author: renovate[bot]
+      nested: []
+  version: 2.105.2
+  title: "'Update contracts digest to 766eb75'"
+  date: 2022-09-27T22:32:32.005Z
+- commits:
     - subject: Update layers/meta-balena to ce91b3f1807f5dc1d1ee861a164957215757d8a0
       hash: 2bb4f22e44ae7e611c1005d52e0a34a0939d43bb
       body: Update layers/meta-balena

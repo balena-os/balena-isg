@@ -1,6 +1,26 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.105.8+rev1
+## (2022-10-11)
+
+
+<details>
+<summary> Update contracts to 6f3ccc3060c64de164d6fd60a0bc65b2d8ceb5d3 [renovate[bot]] </summary>
+
+> ## contracts-2.0.19
+> ### (2022-10-05)
+> 
+> * Update dotnet 6.0 and 3.1 to latest version [Trong Nghia Nguyen]
+> * Add Python v3.10.7 v3.9.14 v3.8.14 and v3.7.14 [Trong Nghia Nguyen]
+> 
+> ## contracts-2.0.18
+> ### (2022-10-05)
+> 
+> * Switch from balenaCI to flowzone [Trong Nghia Nguyen]
+> 
+</details>
+
 # v2.105.8
 ## (2022-10-11)
 

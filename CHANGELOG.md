@@ -1,6 +1,25 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.105.10
+## (2022-10-12)
+
+
+<details>
+<summary> Update layers/meta-balena to 0bc9280eb23161e5897260dc4555062789540b81 [renovate[bot]] </summary>
+
+> ## meta-balena-2.105.10
+> ### (2022-10-12)
+> 
+> * classes: kernel-balena: improve aufs branch selection [Alex Gonzalez]
+> 
+> ## meta-balena-2.105.9
+> ### (2022-10-11)
+> 
+> * meta-balena-rust: Fix ABI for arm [Alex Gonzalez]
+> 
+</details>
+
 # v2.105.8+rev1
 ## (2022-10-11)
 

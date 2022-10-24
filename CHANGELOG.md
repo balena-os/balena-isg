@@ -1,6 +1,20 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.105.17+rev1
+## (2022-10-24)
+
+
+<details>
+<summary> Update contracts to 67fb73772ae7ecfb93109e9e42e8b33465a61ec0 [renovate[bot]] </summary>
+
+> ## contracts-2.0.22
+> ### (2022-10-24)
+> 
+> * hw+device-type: Add jetson-agx-orin-devkit device type [Alexandru Costache]
+> 
+</details>
+
 # v2.105.17
 ## (2022-10-22)
 

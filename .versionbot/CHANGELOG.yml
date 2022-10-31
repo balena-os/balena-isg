@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update contracts to edff7336f8c7fd074aed1fd087a595ee2ca05651
+      hash: b23df4dbfe5a18ca3c03feca1284176ea881dab4
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to edff7336f8c7fd074aed1fd087a595ee2ca05651
+        changelog-entry: Update contracts to edff7336f8c7fd074aed1fd087a595ee2ca05651
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: Add Python v3.11.0 v3.10.8 v3.9.15 v3.8.15 and v3.7.15
+              hash: fbabb315a61ab269458acd051d91e848e2e81cc3
+              body: |
+                Update pip to v22.3 and setuptools to v65.5.0.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+          version: contracts-2.0.26
+          title: ""
+          date: 2022-10-31T01:49:50.638Z
+  version: 2.105.21+rev2
+  title: ""
+  date: 2022-10-31T07:50:23.743Z
+- commits:
     - subject: Update contracts to 3690dee624859ed23f2ee9afaa112638cda5cee3
       hash: 1455987adaac0c7aa3225926a81360b337297fca
       body: Update contracts

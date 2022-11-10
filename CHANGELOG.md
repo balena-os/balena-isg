@@ -1,6 +1,20 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.106.1
+## (2022-11-10)
+
+
+<details>
+<summary> Update layers/meta-balena to bf237c4f76c4026ed3aea2f30edc7c6a484fcef6 [renovate[bot]] </summary>
+
+> ## meta-balena-2.106.1
+> ### (2022-11-10)
+> 
+> * tests: cloud: use cloud ssh to avoid race cond [rcooke-warwick]
+> 
+</details>
+
 # v2.106.0
 ## (2022-11-10)
 

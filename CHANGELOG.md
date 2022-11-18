@@ -1,6 +1,21 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.107.2
+## (2022-11-18)
+
+
+<details>
+<summary> Update layers/meta-balena to a2d882935a9f80b1b685784d7f83d9d81c9805ee [renovate[bot]] </summary>
+
+> ## meta-balena-2.107.2
+> ### (2022-11-18)
+> 
+> * chronyd: allow service status notification socket access to all [Alex Gonzalez]
+> * chrony: update to version 4.2 [Alex Gonzalez]
+> 
+</details>
+
 # v2.107.1
 ## (2022-11-18)
 

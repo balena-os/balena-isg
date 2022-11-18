@@ -1,6 +1,20 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.107.1
+## (2022-11-18)
+
+
+<details>
+<summary> Update layers/meta-balena to df352d2fcc6c70f7eb00e5276208510fe7ec9822 [renovate[bot]] </summary>
+
+> ## meta-balena-2.107.1
+> ### (2022-11-17)
+> 
+> * docs: add RAID setup info [Joseph Kogut]
+> 
+</details>
+
 # v2.107.0
 ## (2022-11-17)
 

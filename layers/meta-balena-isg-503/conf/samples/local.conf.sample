@@ -1,6 +1,8 @@
 # Supported machines
 #MACHINE ?= "isg-503"
 BALENA_STORAGE = "overlay2"
+# temporarily disable kernel headers in order to circumvent a compile issue of kernel-headers-test
+BALENA_DISABLE_KERNEL_HEADERS = "1"
 
 # More info meta-balena/README.md
 #TARGET_REPOSITORY ?= ""
@@ -54,6 +56,6 @@ BB_DISKMON_DIRS = "\
     HALT,${DL_DIR},100M,1K \
     HALT,${SSTATE_DIR},100M,1K"
 
-CONF_VERSION = "1"
+CONF_VERSION = "2"
 
 HOSTTOOLS += "docker iptables"

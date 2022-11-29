@@ -1,11 +1,11 @@
 inherit kernel-balena deploy
 
 
-FILESEXTRAPATHS:prepend := "${THISDIR}/linux-rockchip:"
+#FILESEXTRAPATHS:prepend := "${THISDIR}/linux-rockchip:"
 
-SRC_URI += " \ 
-	file://0004-recktech-modify_ttyName.patch \
-"
+#SRC_URI += " \ 
+#	file://0004-recktech-modify_ttyName.patch \
+#"
 
 KERNEL_IMAGETYPES:remove = "${ROCKCHIP_KERNEL_IMAGES}"
 

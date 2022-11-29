@@ -1,6 +1,75 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.107.12
+## (2022-11-28)
+
+
+<details>
+<summary> Update layers/meta-balena to 3e67facb7e983b198f29a67ae70a3ff5d9e7a90c [renovate[bot]] </summary>
+
+> ## meta-balena-2.107.12
+> ### (2022-11-28)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 61016ad [renovate[bot]] </summary>
+> 
+>> ### leviathan-2.10.4
+>> #### (2022-11-25)
+>> 
+>> * bump contracts to 2.0.27 [rcooke-warwick]
+>> 
+>> ### leviathan-2.10.3
+>> #### (2022-11-24)
+>> 
+>> * On Apple Silicon we should install balena CLI via npm [Kyle Harding]
+>> 
+> </details>
+> 
+> 
+</details>
+
+# v2.107.11
+## (2022-11-25)
+
+
+<details>
+<summary> Update layers/meta-balena to a539a5fb1d5c036bf513e52e243634722344d4c7 [renovate[bot]] </summary>
+
+> ## meta-balena-2.107.11
+> ### (2022-11-25)
+> 
+> * add os testing docs [rcooke-warwick]
+> 
+</details>
+
+# v2.107.10
+## (2022-11-25)
+
+
+<details>
+<summary> Update layers/meta-balena to fbf651fead37336e826d709f48255897962bdbd5 [renovate[bot]] </summary>
+
+> ## meta-balena-2.107.10
+> ### (2022-11-25)
+> 
+> * balena-image.bb: Include bits for LUKS when FDE is enabled [Michal Toman]
+> 
+> ## meta-balena-2.107.9
+> ### (2022-11-24)
+> 
+> * resin-init-flasher: Fix double /dev/ prefix when encrypting partitions [Michal Toman]
+> * grub-conf: fix partition indexes in LUKS config [Michal Toman]
+> * os-helpers-fs: add dependency on parted [Michal Toman]
+> * hostapp-update-hooks: use stage2 bootloader GRUB config when using LUKS [Michal Toman]
+> * balena-rollback: Fix partition index detection for luks devices [Michal Toman]
+> * balena-rollback: Find following symbolic links [Alex Gonzalez]
+> * hostapp-update-hooks: Find following symlinks [Alex Gonzalez]
+> * hostapp-update-hooks: Fix partition index detection for luks devices [Alex Gonzalez]
+> 
+</details>
+
 # v2.107.8
 ## (2022-11-24)
 

@@ -13,9 +13,9 @@
 [submodule "layers/meta-openembedded"]
 	path = layers/meta-openembedded
 	url = https://github.com/openembedded/meta-openembedded.git
-[submodule "layers/meta-isg"]
-	path = layers/meta-isg
-	url = https://github.com/RockSupport/meta-isg.git
 [submodule "contracts"]
 	path = contracts
 	url = https://github.com/balena-io/contracts.git
+[submodule "layers/meta-rockchip"]
+	path = layers/meta-rockchip
+	url = https://github.com/JeffyCN/meta-rockchip.git

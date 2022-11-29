@@ -1,6 +1,8 @@
 # Supported machines
 #MACHINE ?= "isg-503"
 BALENA_STORAGE = "overlay2"
+# temporarily disable kernel headers in order to circumvent a compile issue of kernel-headers-test
+BALENA_DISABLE_KERNEL_HEADERS = "1"
 
 # More info meta-balena/README.md
 #TARGET_REPOSITORY ?= ""

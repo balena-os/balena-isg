@@ -1,5 +1,10 @@
 IMAGE_FSTYPES:append = " balenaos-img"
 
+# add the dtb, extlinux.conf and u-boot binaries to rootfs /boot directory
+IMAGE_INSTALL:append = " \
+    kernel-devicetree \
+"
+
 # Customize balenaos-img
 BALENA_IMAGE_BOOTLOADER = "virtual/bootloader"
 

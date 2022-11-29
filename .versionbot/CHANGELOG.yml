@@ -1,4 +1,38 @@
 - commits:
+    - subject: Update for isg-503
+      hash: 52df87e030cb273e90b8b6193d238fec4c3a739e
+      body: ""
+      footer:
+        Changelog-entry: Update for isg-503
+        changelog-entry: Update for isg-503
+        Signed-off-by: kun.zhang@rockemb.com
+        signed-off-by: kun.zhang@rockemb.com
+      author: RockSupport
+      nested: []
+    - subject: Update Yocto version
+      hash: 1de9c64a48bdaa7a30abf2d505beb21edcfb50e9
+      body: ""
+      footer:
+        Changelog-entry: Update Yocto version
+        changelog-entry: Update Yocto version
+        Signed-off-by: kun.zhang@rockemb.com
+        signed-off-by: kun.zhang@rockemb.com
+      author: RockSupport
+      nested: []
+    - subject: Change bsp layer
+      hash: 8aa09bbe6e462152c90895383f7762fc3fc573bb
+      body: ""
+      footer:
+        Changelog-entry: Change bsp layer
+        changelog-entry: Change bsp layer
+        Signed-off-by: kun.zhang@rockemb.com
+        signed-off-by: kun.zhang@rockemb.com
+      author: RockSupport
+      nested: []
+  version: 2.107.12+rev1
+  title: ""
+  date: 2022-11-29T10:52:02.023Z
+- commits:
     - subject: Update layers/meta-balena to 3e67facb7e983b198f29a67ae70a3ff5d9e7a90c
       hash: a4e94fd038864d8cb30f4bb087af2ac22675d1b8
       body: Update layers/meta-balena

@@ -1,6 +1,13 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.107.12+rev1
+## (2022-11-29)
+
+* Update for isg-503 [RockSupport]
+* Update Yocto version [RockSupport]
+* Change bsp layer [RockSupport]
+
 # v2.107.12
 ## (2022-11-28)
 

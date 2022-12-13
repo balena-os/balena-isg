@@ -1,4 +1,35 @@
 - commits:
+    - subject: Update layers/meta-balena to 79367a045b9e8d483e3d330b70d43cadc5462f78
+      hash: c0101302a2b02e85db1f7069e24af5e76c91d4c5
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 79367a045b9e8d483e3d330b70d43cadc5462f78
+        changelog-entry: Update layers/meta-balena to 79367a045b9e8d483e3d330b70d43cadc5462f78
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "balena-image-initramfs: disable redundant compression"
+              hash: 91213a65ab83794be274757c8598c4c3495ceece
+              body: >
+                Our initramfs is built into the kernel, which is always compressed.
+
+                Disable redundant initramfs compression, which should save some CPU
+
+                cycles during build and boot, as well as improving compression ratio.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+          version: meta-balena-2.107.29
+          title: ""
+          date: 2022-12-13T07:13:16.319Z
+  version: 2.107.29
+  title: ""
+  date: 2022-12-13T10:59:13.504Z
+- commits:
     - subject: Update layers/meta-balena to 0359cad249077b459a6dbc7bb9ba026fcae91a15
       hash: 0bb4a93e3951339556ecbd9e35fe232fe1ebc7f9
       body: Update layers/meta-balena

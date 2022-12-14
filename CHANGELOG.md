@@ -1,6 +1,32 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.107.31
+## (2022-12-14)
+
+
+<details>
+<summary> Update layers/meta-balena to f342a122039f97e06319ba497b5f6342e1597656 [renovate[bot]] </summary>
+
+> ## meta-balena-2.107.31
+> ### (2022-12-14)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 27b78a4 [renovate[bot]] </summary>
+> 
+>> ### leviathan-2.10.10
+>> #### (2022-12-13)
+>> 
+>> * Enable external contributions via flowzone [Kyle Harding]
+>> 
+> 
+> </details>
+> 
+> 
+
+</details>
+
 # v2.107.30
 ## (2022-12-13)
 

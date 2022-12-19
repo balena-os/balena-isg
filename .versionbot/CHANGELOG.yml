@@ -1,4 +1,48 @@
 - commits:
+    - subject: Update layers/meta-balena to 749dd795aa3d3c79eee071a5c8c4fd2a305af08e
+      hash: 1b2186f6890d6b6e8944fb56d3d47a3f51a4fcdc
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 749dd795aa3d3c79eee071a5c8c4fd2a305af08e
+        changelog-entry: Update layers/meta-balena to 749dd795aa3d3c79eee071a5c8c4fd2a305af08e
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: Update balena-os/balena-supervisor to v14.4.9
+              hash: a56e178900a41a56e7f56b0f5964764f02e58932
+              body: Update balena-supervisor
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: renovate[bot]
+              nested: []
+          version: meta-balena-2.108.2
+          title: ""
+          date: 2022-12-19T18:21:23.232Z
+    - subject: Update layers/meta-balena to 1d8c6eeed258f1205d6b1e0b78088ea867308b80
+      hash: d9668a3a0e863124d05a29529f56b5f40c96e1af
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 1d8c6eeed258f1205d6b1e0b78088ea867308b80
+        changelog-entry: Update layers/meta-balena to 1d8c6eeed258f1205d6b1e0b78088ea867308b80
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: Update balena-os/balena-supervisor to v14.4.9
+              hash: a56e178900a41a56e7f56b0f5964764f02e58932
+              body: Update balena-supervisor
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: renovate[bot]
+              nested: []
+          version: meta-balena-2.108.2
+          title: ""
+          date: 2022-12-19T18:21:23.232Z
+  version: 2.108.2
+  title: ""
+  date: 2022-12-19T22:23:07.398Z
+- commits:
     - subject: Update layers/meta-balena to 1b3b0a273b8aeb2ac69805253657c7ec2ec670b4
       hash: 4aa8c884018ac17ebe05043e2e99d7b8bb814aa4
       body: Update layers/meta-balena

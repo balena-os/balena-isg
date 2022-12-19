@@ -1,6 +1,33 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.108.2
+## (2022-12-19)
+
+
+<details>
+<summary> Update layers/meta-balena to 749dd795aa3d3c79eee071a5c8c4fd2a305af08e [renovate[bot]] </summary>
+
+> ## meta-balena-2.108.2
+> ### (2022-12-19)
+> 
+> * Update balena-os/balena-supervisor to v14.4.9 [renovate[bot]]
+> 
+
+</details>
+
+
+<details>
+<summary> Update layers/meta-balena to 1d8c6eeed258f1205d6b1e0b78088ea867308b80 [renovate[bot]] </summary>
+
+> ## meta-balena-2.108.2
+> ### (2022-12-19)
+> 
+> * Update balena-os/balena-supervisor to v14.4.9 [renovate[bot]]
+> 
+
+</details>
+
 # v2.108.0
 ## (2022-12-17)
 

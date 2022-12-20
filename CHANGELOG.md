@@ -1,6 +1,23 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.108.4
+## (2022-12-20)
+
+
+<details>
+<summary> Update contracts to b65d5bd372587d4aaabba526d34f67c3f63ea90b [renovate[bot]] </summary>
+
+> ## contracts-2.0.35
+> ### (2022-12-20)
+> 
+> * hw.device-type: Add Owasys owa5X device [Alvaro Guzman]
+> 
+
+</details>
+
+* Update layers/meta-balena to d8168e9bcdba5a017acb33a611182b9889e4c50b [renovate[bot]]
+
 # v2.108.3
 ## (2022-12-20)
 

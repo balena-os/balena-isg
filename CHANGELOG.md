@@ -1,6 +1,33 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.108.7
+## (2022-12-28)
+
+
+<details>
+<summary> Update layers/meta-balena to 68ec8ca1388c8e442acf1235dc573aeb12ff385a [renovate[bot]] </summary>
+
+> ## meta-balena-2.108.7
+> ### (2022-12-28)
+> 
+> * tests: os: fix modem test teardown [rcooke-warwick]
+> 
+
+</details>
+
+
+<details>
+<summary> Update layers/meta-balena to 3a45aa111217e64ef6ab8cbd16d34a12ece49a3c [renovate[bot]] </summary>
+
+> ## meta-balena-2.108.7
+> ### (2022-12-28)
+> 
+> * tests: os: fix modem test teardown [rcooke-warwick]
+> 
+
+</details>
+
 # v2.108.5+rev2
 ## (2022-12-23)
 

@@ -1,4 +1,52 @@
 - commits:
+    - subject: Update layers/meta-balena to 68ec8ca1388c8e442acf1235dc573aeb12ff385a
+      hash: 46f0896808c35e91b9b981402bee9085588e3f38
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 68ec8ca1388c8e442acf1235dc573aeb12ff385a
+        changelog-entry: Update layers/meta-balena to 68ec8ca1388c8e442acf1235dc573aeb12ff385a
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "tests: os: fix modem test teardown"
+              hash: e5f9b72eae7bcc88cb28d99f8b1bf7f2c1b65789
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: meta-balena-2.108.7
+          title: ""
+          date: 2022-12-28T16:06:50.921Z
+    - subject: Update layers/meta-balena to 3a45aa111217e64ef6ab8cbd16d34a12ece49a3c
+      hash: 91afd4ace32e95f63e8cf0c1b07bf9f61e5c098e
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 3a45aa111217e64ef6ab8cbd16d34a12ece49a3c
+        changelog-entry: Update layers/meta-balena to 3a45aa111217e64ef6ab8cbd16d34a12ece49a3c
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "tests: os: fix modem test teardown"
+              hash: e5f9b72eae7bcc88cb28d99f8b1bf7f2c1b65789
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: meta-balena-2.108.7
+          title: ""
+          date: 2022-12-28T16:06:50.921Z
+  version: 2.108.7
+  title: ""
+  date: 2022-12-28T19:58:11.677Z
+- commits:
     - subject: Update balena-yocto-scripts to 0f1d0265bbabdb2b869f6cf9363d418b52681ffc
       hash: 2d4402fb650da772b6483deeecc67bb2fcd84c6d
       body: Update balena-yocto-scripts

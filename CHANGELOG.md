@@ -1,6 +1,21 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.108.12
+## (2023-01-04)
+
+
+<details>
+<summary> Update layers/meta-balena to 576d3f249fbab16bf93a4dd5d158bae6f2ad9f9b [renovate[bot]] </summary>
+
+> ## meta-balena-2.108.12
+> ### (2023-01-04)
+> 
+> * tests/hup: Avoid an old engine bug when pulling multiarch images on rpi [Kyle Harding]
+> 
+
+</details>
+
 # v2.108.11
 ## (2023-01-03)
 

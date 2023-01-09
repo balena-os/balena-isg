@@ -1,6 +1,21 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.108.16
+## (2023-01-09)
+
+
+<details>
+<summary> Update layers/meta-balena to 610fc18f387665f4077ce1bed538bd2da4ba516b [renovate[bot]] </summary>
+
+> ## meta-balena-2.108.16
+> ### (2023-01-09)
+> 
+> * balena-supervisor: Set the supervisor package version [Kyle Harding]
+> 
+
+</details>
+
 # v2.108.15+rev3
 ## (2023-01-09)
 

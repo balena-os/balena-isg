@@ -1,6 +1,28 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.108.27+rev1
+## (2023-02-07)
+
+
+<details>
+<summary> Update contracts to 79998a238ca981b890dfb9206f50bde2d367ff7c [Renovate Bot] </summary>
+
+> ## contracts-2.0.42
+> ### (2023-02-06)
+> 
+> * Add golang v1.20 [Trong Nghia Nguyen]
+> * Add node v19.6.0 and v18.14.0 [Trong Nghia Nguyen]
+> 
+> ## contracts-2.0.41
+> ### (2023-02-01)
+> 
+> * Add support for latest dotnet releases v7 (7.0.102) and v6 (6.0.113) [Trong Nghia Nguyen]
+> * Add node v19.5.0 [Trong Nghia Nguyen]
+> 
+
+</details>
+
 # v2.108.27
 ## (2023-02-07)
 

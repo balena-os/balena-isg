@@ -1,6 +1,63 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.112.12
+## (2023-02-21)
+
+
+<details>
+<summary> Update layers/meta-balena to 2e4f0c9530e0c8ea71b52a6e6a4f12fd01f1643b [Renovate Bot] </summary>
+
+> ## meta-balena-2.112.12
+> ### (2023-02-20)
+> 
+> * os-helpers-fs: get_internal_device() skip disks w/out media [Joseph Kogut]
+> 
+> ## meta-balena-2.112.11
+> ### (2023-02-20)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 84c2b96 [Renovate Bot] </summary>
+> 
+>> ### leviathan-2.22.0
+>> #### (2023-02-20)
+>> 
+>> * Update core/contracts digest to 93ba80c [Renovate Bot]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-2.112.10
+> ### (2023-02-20)
+> 
+> * tests: os: secureboot: skip if system is not locked down [Joseph Kogut]
+> 
+> ## meta-balena-2.112.9
+> ### (2023-02-20)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 8a7bdcc [Renovate Bot] </summary>
+> 
+>> ### leviathan-2.21.0
+>> #### (2023-02-20)
+>> 
+>> * Update core/contracts digest to 103037c [Renovate Bot]
+>> 
+>> ### leviathan-2.20.1
+>> #### (2023-02-20)
+>> 
+>> * client: throw errors instead of blanket handling [Joseph Kogut]
+>> 
+> 
+> </details>
+> 
+> 
+
+</details>
+
 # v2.112.8+rev1
 ## (2023-02-20)
 

@@ -1,6 +1,21 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.113.28
+## (2023-03-27)
+
+
+<details>
+<summary> Update layers/meta-balena to 30a8878dc207e4b9a8654ee715d36440e8a1a5d0 [Renovate Bot] </summary>
+
+> ## meta-balena-2.113.28
+> ### (2023-03-27)
+> 
+> * README: modify migration documentation to match module [Alex Gonzalez]
+> 
+
+</details>
+
 # v2.113.27
 ## (2023-03-24)
 

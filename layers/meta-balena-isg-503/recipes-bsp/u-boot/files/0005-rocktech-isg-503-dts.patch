@@ -1,0 +1,26 @@
+diff --git a/arch/arm/dts/px30-evb.dts b/arch/arm/dts/px30-evb.dts
+index bf1c857d62..3b3cff342b 100644
+--- a/arch/arm/dts/px30-evb.dts
++++ b/arch/arm/dts/px30-evb.dts
+@@ -425,7 +425,7 @@
+ };
+ 
+ &uart2 {
+-	status = "okay";
++	status = "disabled";
+ };
+ 
+ &pinctrl {
+diff --git a/arch/arm/dts/px30.dtsi b/arch/arm/dts/px30.dtsi
+index b347de9ed5..8fa8cac661 100644
+--- a/arch/arm/dts/px30.dtsi
++++ b/arch/arm/dts/px30.dtsi
+@@ -410,7 +410,7 @@
+ 		dmas = <&dmac 4>, <&dmac 5>;
+ 		#dma-cells = <2>;
+ 		pinctrl-names = "default";
+-		pinctrl-0 = <&uart2m0_xfer>;
++		pinctrl-0 = <&uart2m1_xfer>;
+ 		status = "disabled";
+ 	};
+ 

@@ -1,0 +1,69 @@
+diff --git a/arch/arm/mach-rockchip/boot_mode.c b/arch/arm/mach-rockchip/boot_mode.c
+index 5fd20c23ca..3ef82077ff 100644
+--- a/arch/arm/mach-rockchip/boot_mode.c
++++ b/arch/arm/mach-rockchip/boot_mode.c
+@@ -214,7 +214,7 @@ int rockchip_get_boot_mode(void)
+ int setup_boot_mode(void)
+ {
+ 	char env_preboot[256] = {0};
+-
++	printf("setup_boot_mode v4\n");
+ 	switch (rockchip_get_boot_mode()) {
+ 	case BOOT_MODE_BOOTLOADER:
+ 		printf("enter fastboot!\n");
+diff --git a/arch/arm/mach-rockchip/px30/px30.c b/arch/arm/mach-rockchip/px30/px30.c
+index 1e93c504e4..2457735581 100644
+--- a/arch/arm/mach-rockchip/px30/px30.c
++++ b/arch/arm/mach-rockchip/px30/px30.c
+@@ -202,9 +202,10 @@ int arch_cpu_init(void)
+ 	/* Set cpu qos priority */
+ 	writel(QOS_PRIORITY_LEVEL(1, 1), SERVICE_CORE_ADDR + QOS_PRIORITY);
+ 
+-#if !defined(CONFIG_DEBUG_UART_BOARD_INIT) || \
+-    (CONFIG_DEBUG_UART_BASE != 0xff160000) || \
+-    (CONFIG_DEBUG_UART_CHANNEL != 0)
++#endif
++	
++
++	puts("fix sdmmc pinmux if not using uart2-channel0 as debug uart\n");
+ 	static struct px30_grf * const grf = (void *)GRF_BASE;
+ 	/* fix sdmmc pinmux if not using uart2-channel0 as debug uart */
+ 	rk_clrsetreg(&grf->gpio1dl_iomux,
+@@ -217,9 +218,6 @@ int arch_cpu_init(void)
+ 		     GPIO1D6_SDMMC_CLK << GPIO1D6_SHIFT |
+ 		     GPIO1D5_SDMMC_D3 << GPIO1D5_SHIFT |
+ 		     GPIO1D4_SDMMC_D2 << GPIO1D4_SHIFT);
+-#endif
+-
+-#endif
+ 
+ 	/* Enable PD_VO (default disable at reset) */
+ 	rk_clrreg(PMU_PWRDN_CON, 1 << 13);
+@@ -287,8 +285,7 @@ void board_debug_uart_init(void)
+ 	rk_clrsetreg(&cru->clksel_con[38],
+ 		     UART2_CLK_SEL_MASK,
+ 		     UART2_CLK_SEL_UART2 << UART2_CLK_SEL_SHIFT);
+-
+-#if (CONFIG_DEBUG_UART2_CHANNEL == 1)
++	
+ 	/* Enable early UART2 */
+ 	rk_clrsetreg(&grf->iofunc_con0,
+ 		     CON_IOMUX_UART2SEL_MASK,
+@@ -303,16 +300,7 @@ void board_debug_uart_init(void)
+ 		     GPIO2B6_MASK | GPIO2B4_MASK,
+ 		     GPIO2B6_UART2_RXM1 << GPIO2B6_SHIFT |
+ 		     GPIO2B4_UART2_TXM1 << GPIO2B4_SHIFT);
+-#else
+-	rk_clrsetreg(&grf->iofunc_con0,
+-		     CON_IOMUX_UART2SEL_MASK,
+-		     CON_IOMUX_UART2SEL_M0 << CON_IOMUX_UART2SEL_SHIFT);
+-
+-	rk_clrsetreg(&grf->gpio1dl_iomux,
+-		     GPIO1D3_MASK | GPIO1D2_MASK,
+-		     GPIO1D3_UART2_RXM0 << GPIO1D3_SHIFT |
+-		     GPIO1D2_UART2_TXM0 << GPIO1D2_SHIFT);
+-#endif /* CONFIG_DEBUG_UART2_CHANNEL == 1 */
++	puts("set uart2_rxm1 and uart2_txm1 here\n");
+ 
+ #endif /* CONFIG_DEBUG_UART_BASE && CONFIG_DEBUG_UART_BASE == ... */
+ }

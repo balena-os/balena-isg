@@ -39,7 +39,7 @@ module.exports =
 		machine: 'isg-503'
 		image: 'balena-image-flasher'
 		fstype: 'balenaos-img'
-		version: 'yocto-dunfell'
+		version: 'yocto-kirkstone'
 		deployArtifact: 'balena-image-flasher-isg-503.balenaos-img'
 		compressed: true
 

@@ -1,6 +1,28 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.114.2
+## (2023-04-12)
+
+
+<details>
+<summary> Update layers/meta-balena to af7446b3723221a5dbaa6e979c57e305d481f2d3 [Renovate Bot] </summary>
+
+> ## meta-balena-2.114.2
+> ### (2023-04-12)
+> 
+> * tests: cloud: convert ssh tunneling to test [rcooke-warwick]
+> * tests: hup: convert ssh tunneling to test [rcooke-warwick]
+> * tests: os: convert ssh tunneling to test [rcooke-warwick]
+> * tests: cloud: check engine+sv ok in suite [rcooke-warwick]
+> * tests: os: check engine+sv ok in suite [rcooke-warwick]
+> * tests:cloud: convert initial SSH attempt into test [rcooke-warwick]
+> * tests: hup: convert initial SSH attempt into test [rcooke-warwick]
+> * tests: os: convert initial SSH attempt into test [rcooke-warwick]
+> 
+
+</details>
+
 # v2.114.1+rev2
 ## (2023-04-12)
 

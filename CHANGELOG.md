@@ -1,6 +1,11 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.114.1+rev2
+## (2023-04-12)
+
+* conf/layer: Optimize for size on isg-503 [RockSupport]
+
 # v2.114.1+rev1
 ## (2023-04-12)
 

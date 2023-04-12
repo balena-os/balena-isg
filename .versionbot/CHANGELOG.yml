@@ -1,4 +1,21 @@
 - commits:
+    - subject: "conf/layer: Optimize for size on isg-503"
+      hash: 5f7638c9b08acedb74f49cd9eb4de53ca8c07d81
+      body: |
+        balena-image-initramfs-1.0-r0 do_image_cpio:
+        The rootfs size 36864(K) exceeds IMAGE_ROOTFS_MAXSIZE: 32768(K)
+        and enable -Os to optimize for smallest code size.
+      footer:
+        Changelog-entry: "conf/layer: Optimize for size on isg-503"
+        changelog-entry: "conf/layer: Optimize for size on isg-503"
+        Signed-off-by: kun zhang <kun.zhang@rockemb.com>
+        signed-off-by: kun zhang <kun.zhang@rockemb.com>
+      author: RockSupport
+      nested: []
+  version: 2.114.1+rev2
+  title: ""
+  date: 2023-04-12T10:18:09.132Z
+- commits:
     - subject: Clean up the contributing section from README.md
       hash: b806fd281b4f2e8080b1879beadd82f7aba0affd
       body: |

@@ -1,0 +1,27 @@
+diff --git a/Makefile b/Makefile
+index de68fa12be..e2cdfd237e 100644
+--- a/Makefile
++++ b/Makefile
+@@ -360,7 +360,7 @@ KBUILD_CPPFLAGS := -D__KERNEL__ -D__UBOOT__
+ KBUILD_CFLAGS   := -Wall -Wstrict-prototypes \
+ 		   -Wno-format-security \
+ 		   -fno-builtin -ffreestanding
+-KBUILD_CFLAGS	+= -fshort-wchar -Werror
++KBUILD_CFLAGS	+= -fshort-wchar
+ KBUILD_AFLAGS   := -D__ASSEMBLY__
+ 
+ # Read UBOOTRELEASE from include/config/uboot.release (if it exists)
+@@ -909,13 +909,11 @@ u-boot-dtb.bin: u-boot-nodtb.bin dts/dt.dtb FORCE
+ ifneq ($(wildcard dts/kern.dtb),)
+ u-boot-dtb-kern.bin: u-boot-dtb.bin FORCE
+ 	$(call if_changed,copy)
+-	$(call if_changed,truncate)
+ u-boot.bin: u-boot-dtb-kern.bin dts/kern.dtb FORCE
+ 	$(call if_changed,cat)
+ else
+ u-boot.bin: u-boot-dtb.bin FORCE
+ 	$(call if_changed,copy)
+-	$(call if_changed,truncate)
+ endif
+ 
+ else

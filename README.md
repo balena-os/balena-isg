@@ -1,6 +1,4 @@
-# balena-isg repository
-
-## Clone/Initialize the repository
+## Clone / Initialize this repository
 
 There are two ways of initializing this repository:
 * Clone this repository with "git clone --recursive".
@@ -43,7 +41,7 @@ See below for using the build script.
 
 ### Issues
 
-For issues please use this section: https://github.com/balena-os/balena-isg/issues
+See [Issues](../../issues) section
 
 ### Pull requests
 
@@ -51,6 +49,7 @@ To contribute send github pull requests targeting this repository.
 
 Please refer to: [Yocto Contribution Guidelines](https://wiki.yoctoproject.org/wiki/Contribution_Guidelines#General_Information) and try to use the commit log format as stated there. Example:
 ```
+
 <component>: Short description
 
 I'm going to explain here what my commit does in a way that history
@@ -60,28 +59,12 @@ Changelog-entry: User facing description of the issue
 Signed-off-by: Joe Developer <joe.developer@example.com>
 ```
 
-The header of each commit must not exceed 72 characters in length and must be in 1 line only.
-
 The header and the subject of each commit must be separated by an empty line.
-
-The subject of each commit must not exceed 72 characters per line and can be wrapped to several lines.
 
 The subject and the footer of each commit must be separated by an empty line.
 
 Every pull request must contain at least one commit annotated with the `Changelog-entry` footer. The messages contained in these footers will be used to automatically fill the changelog on every new version.
 
-Also, every update to `meta-balena` should be separated into its own commit, if the body of that commit contains the following line `Updated meta-balena from X to Y` the generated changelog will include a button to show all the updates in `meta-balena` from the version after `X` to `Y`.
-
-An example of a valid commit updating `meta-balena` is:
-
-```
-layers/meta-balena: Update to v2.73.0
-
-Update meta-balena from 2.72.0 to 2.73.0
-
-Changelog-entry: Update the meta-balena submodule from v2.72.0 to v2.73.0
-```
-
-Make sure you mention the issue addressed by a PR. See:
+If your PR fixes an open issue, make sure you mention the issue addressed by the PR. See:
 * https://help.github.com/articles/autolinked-references-and-urls/#issues-and-pull-requests
 * https://help.github.com/articles/closing-issues-via-commit-messages/#closing-an-issue-in-a-different-repository

@@ -1,6 +1,12 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.114.3+rev2
+## (2023-04-17)
+
+* layers/meta-balena-isg-503:layers/meta-balena-isg-503:Modify kernel-headers-test Dockerfile [RockSupport]
+* layers/meta-balena-isg-503:remove the migrate and recovery modules [RockSupport]
+
 # v2.114.3+rev1
 ## (2023-04-12)
 

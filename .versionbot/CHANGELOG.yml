@@ -1,4 +1,39 @@
 - commits:
+    - subject: layers/meta-balena-isg-503:layers/meta-balena-isg-503:Modify
+        kernel-headers-test Dockerfile
+      hash: 17877837d029622dc859d9bafc04537417d7d379
+      body: >
+        build error /usr/bin/env: 'python3': No such file or directory
+
+        add python3 in Dockerfile
+
+
+        this is needed because of https://github.com/JeffyCN/meta-rockchip/commit/1258d9241edf512b0d10076896fd5ce36ba58cb4
+      footer:
+        Changelog-entry: layers/meta-balena-isg-503:layers/meta-balena-isg-503:Modify
+          kernel-headers-test Dockerfile
+        changelog-entry: layers/meta-balena-isg-503:layers/meta-balena-isg-503:Modify
+          kernel-headers-test Dockerfile
+        Signed-off-by: kun zhang <kun.zhang@rockemb.com>
+        signed-off-by: kun zhang <kun.zhang@rockemb.com>
+      author: RockSupport
+      nested: []
+    - subject: layers/meta-balena-isg-503:remove the migrate and recovery modules
+      hash: d470fd088317225e9e964307871ddc9d7b9895e7
+      body: |
+        The initramfs image that exceeds the allocated space.
+        remove some new modules
+      footer:
+        Changelog-entry: layers/meta-balena-isg-503:remove the migrate and recovery modules
+        changelog-entry: layers/meta-balena-isg-503:remove the migrate and recovery modules
+        Signed-off-by: kun zhang <kun.zhang@rockemb.com>
+        signed-off-by: kun zhang <kun.zhang@rockemb.com>
+      author: RockSupport
+      nested: []
+  version: 2.114.3+rev2
+  title: ""
+  date: 2023-04-17T10:19:34.550Z
+- commits:
     - subject: Update balena-yocto-scripts to 66e817cc08c391f06d0cf16dded7e6cf2082d0ca
       hash: 44987b25d14b671293f31a27d4cc9736c4f932e3
       body: Update balena-yocto-scripts

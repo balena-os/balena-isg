@@ -1,6 +1,21 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.114.5
+## (2023-04-19)
+
+
+<details>
+<summary> Update layers/meta-balena to cca4a5e7e9523bbe5892af3846ff8b3f03d6c749 [Renovate Bot] </summary>
+
+> ## meta-balena-2.114.5
+> ### (2023-04-19)
+> 
+> * Ship separate GRUB images for secure boot [Michal Toman]
+> 
+
+</details>
+
 # v2.114.4
 ## (2023-04-18)
 

@@ -1,6 +1,21 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.114.20
+## (2023-05-05)
+
+
+<details>
+<summary> Update layers/meta-balena to e2ce4a7a054624967941f4b96500b5bb79c36d1e [Renovate Bot] </summary>
+
+> ## meta-balena-2.114.20
+> ### (2023-05-04)
+> 
+> * Updated the CDS link [Ryan]
+> 
+
+</details>
+
 # v2.114.19+rev1
 ## (2023-05-04)
 

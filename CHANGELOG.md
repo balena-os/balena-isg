@@ -1,6 +1,21 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.115.1+rev1
+## (2023-05-19)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 063493eb51bbaecce4fde37f6fe042bfdc647b71 [Renovate Bot] </summary>
+
+> ## balena-yocto-scripts-1.19.29
+> ### (2023-05-19)
+> 
+> * balena-deploy: add secureBoot feature into contract [Alex Gonzalez]
+> 
+
+</details>
+
 # v2.115.1
 ## (2023-05-18)
 

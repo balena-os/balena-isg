@@ -1,6 +1,26 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.115.18+rev6
+## (2023-08-03)
+
+
+<details>
+<summary> Update contracts to bd81b500fe74976567485afa39f6bbab3e60dd77 [Self-hosted Renovate Bot] </summary>
+
+> ## contracts-2.0.67
+> ### (2023-08-03)
+> 
+> * Fix conditional when installing libssl1.1 [Kyle Harding]
+> 
+> ## contracts-2.0.66
+> ### (2023-08-03)
+> 
+> * Fix a condition where /etc/nsswitch.conf exists and the build fails [Kyle Harding]
+> 
+
+</details>
+
 # v2.115.18+rev5
 ## (2023-08-02)
 

@@ -1,6 +1,11 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.115.18+rev7
+## (2023-08-10)
+
+* Update build instructions in README [Alex Gonzalez]
+
 # v2.115.18+rev6
 ## (2023-08-03)
 

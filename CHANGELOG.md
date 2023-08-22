@@ -1,6 +1,21 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.115.18+rev9
+## (2023-08-22)
+
+
+<details>
+<summary> Update contracts to 10b9852d5826601854c35be13555647ca65bdb54 [Self-hosted Renovate Bot] </summary>
+
+> ## contracts-2.0.69
+> ### (2023-08-22)
+> 
+> * Remove Ubuntu Impish and Kinetic and add Lunar [Kyle Harding]
+> 
+
+</details>
+
 # v2.115.18+rev8
 ## (2023-08-15)
 

@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update .gitmodules with submodule branch information
+      hash: 3226cd852bb1a54f04b162d41ba5d087708231d0
+      body: ""
+      footer:
+        Changelog-entry: Update .gitmodules with submodule branch information
+        changelog-entry: Update .gitmodules with submodule branch information
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.115.18+rev13
+  title: ""
+  date: 2023-09-18T15:38:54.864Z
+- commits:
     - subject: Update contracts to 518a1d424f09a11dc1b60a16026bfe8ffe07ca78
       hash: de0a7bca0b16647c909ea3be32bef15694bb5429
       body: Update contracts

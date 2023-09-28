@@ -1,6 +1,26 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.115.18+rev19
+## (2023-09-28)
+
+
+<details>
+<summary> Update contracts to 12fb777da3f386501d3fa386b9ac9319afd9a424 [Self-hosted Renovate Bot] </summary>
+
+> ## contracts-2.0.75
+> ### (2023-09-28)
+> 
+> * raspberrypi5: remove reference to 64bits in display name [Alex Gonzalez]
+> 
+> ## contracts-2.0.74
+> ### (2023-09-28)
+> 
+> * raspberrypi5: Explicitly flag as public for the switch to apply [Alex Gonzalez]
+> 
+
+</details>
+
 # v2.115.18+rev18
 ## (2023-09-28)
 

@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update layers/meta-openembedded to
+        9c5541f7e18a1fac3b8dea71e1ebb8398d58e6ff
+      hash: c713286be19d26e55cc81ec0eaceee40461e7bbf
+      body: Update layers/meta-openembedded
+      footer:
+        Changelog-entry: Update layers/meta-openembedded to
+          9c5541f7e18a1fac3b8dea71e1ebb8398d58e6ff
+        changelog-entry: Update layers/meta-openembedded to
+          9c5541f7e18a1fac3b8dea71e1ebb8398d58e6ff
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.115.18+rev20
+  title: ""
+  date: 2023-09-30T16:24:15.193Z
+- commits:
     - subject: Update contracts to 12fb777da3f386501d3fa386b9ac9319afd9a424
       hash: 8aece3d18fd105ab09de8348d948860e678a8222
       body: Update contracts

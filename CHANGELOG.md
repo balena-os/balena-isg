@@ -1,6 +1,26 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.115.18+rev26
+## (2023-10-10)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 37a4aa0421848226b41dda508e5fc05fdcc01389 [Self-hosted Renovate Bot] </summary>
+
+> ## balena-yocto-scripts-1.19.37
+> ### (2023-10-10)
+> 
+> * Dockerfile_yocto-build-env: Add screen [Alex J Lennon]
+> 
+> ## balena-yocto-scripts-1.19.36
+> ### (2023-10-10)
+> 
+> * flowzone: allow external contributions [Alex Gonzalez]
+> 
+
+</details>
+
 # v2.115.18+rev25
 ## (2023-10-09)
 

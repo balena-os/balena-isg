@@ -1,6 +1,21 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.115.18+rev28
+## (2023-10-11)
+
+
+<details>
+<summary> Update balena-yocto-scripts to c9f72aa9d032ab2281b918dab5970f18568a7644 [Self-hosted Renovate Bot] </summary>
+
+> ## balena-yocto-scripts-1.19.38
+> ### (2023-10-11)
+> 
+> * README.md ChangeType is needed for PR so add to README example [Alex J Lennon]
+> 
+
+</details>
+
 # v2.115.18+rev27
 ## (2023-10-10)
 

@@ -1,6 +1,21 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.115.18+rev53
+## (2023-12-21)
+
+
+<details>
+<summary> Update contracts to 31188f585dc7d7f9e58c138e4c3257e9c2c274c0 [Self-hosted Renovate Bot] </summary>
+
+> ## contracts-2.0.85
+> ### (2023-12-21)
+> 
+> * patch: Remove wiki link reference to flash Tinker Board [Vipul Gupta (@vipulgupta2048)]
+> 
+
+</details>
+
 # v2.115.18+rev52
 ## (2023-12-18)
 

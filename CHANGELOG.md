@@ -1,6 +1,21 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.115.18+rev57
+## (2023-12-29)
+
+
+<details>
+<summary> Update contracts to dd3614e53254562a7f93415de7e7aaaf73637a96 [Self-hosted Renovate Bot] </summary>
+
+> ## contracts-2.0.87
+> ### (2023-12-29)
+> 
+> * hw.device-type: Fix device type is_private flag for imx8mp-var-dart [Florin Sarbu]
+> 
+
+</details>
+
 # v2.115.18+rev56
 ## (2023-12-28)
 

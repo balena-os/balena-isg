@@ -1,6 +1,21 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.115.18+rev59
+## (2024-01-05)
+
+
+<details>
+<summary> Update contracts to b469f315f2dc5dbd396cbeab6fe3577b948af945 [Self-hosted Renovate Bot] </summary>
+
+> ## contracts-2.0.89
+> ### (2024-01-05)
+> 
+> * hw.device-type: Fix hyperlinks in provisioning instructions [Alexandru Costache]
+> 
+
+</details>
+
 # v2.115.18+rev58
 ## (2024-01-03)
 

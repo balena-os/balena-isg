@@ -1,6 +1,21 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.115.18+rev68
+## (2024-01-31)
+
+
+<details>
+<summary> Update contracts to 8dfe06b57576e15e8579d4083bb316c9c7671488 [Self-hosted Renovate Bot] </summary>
+
+> ## contracts-2.0.91
+> ### (2024-02-01)
+> 
+> * Remove generic-amd64-fde device type [Michal Toman]
+> 
+
+</details>
+
 # v2.115.18+rev67
 ## (2024-01-29)
 

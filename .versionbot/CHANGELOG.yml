@@ -1,4 +1,18 @@
 - commits:
+    - subject: pass input parameters to common esr workflow
+      hash: adb7c3cb31dcb90e719e724392ab7b446127a24f
+      body: ""
+      footer:
+        Changelog-entry: pass input parameters to common esr workflow
+        changelog-entry: pass input parameters to common esr workflow
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.115.18+rev88
+  title: ""
+  date: 2024-03-05T19:16:21.093Z
+- commits:
     - subject: Update layers/poky to b3e316e8486e5462c3c71a9c8248779a5c253385
       hash: 9bf08923adeedde59322dc3c5212d34612ab0f67
       body: Update layers/poky

@@ -1,6 +1,21 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.115.18+rev93
+## (2024-03-14)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 775e16968edc4c3803834bc524687ae4316ab6e4 [Self-hosted Renovate Bot] </summary>
+
+> ## balena-yocto-scripts-1.21.5
+> ### (2024-03-14)
+> 
+> * Merge AMI publishing dependencies into yocto-build-env [Kyle Harding]
+> 
+
+</details>
+
 # v2.115.18+rev92
 ## (2024-03-14)
 

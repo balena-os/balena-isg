@@ -1,6 +1,21 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.115.18+rev92
+## (2024-03-14)
+
+
+<details>
+<summary> Update contracts to 908a50dc79192e66ab3fd518f166be05382c2c6e [Self-hosted Renovate Bot] </summary>
+
+> ## contracts-2.0.96
+> ### (2024-03-14)
+> 
+> * hw.device-type: Add beaglebone-play device [delhiryder]
+> 
+
+</details>
+
 # v2.115.18+rev91
 ## (2024-03-14)
 

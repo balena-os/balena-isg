@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update contracts to 908a50dc79192e66ab3fd518f166be05382c2c6e
+      hash: 071e90e00e0d1e2a72fa1fbc6b73117f068fef64
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 908a50dc79192e66ab3fd518f166be05382c2c6e
+        changelog-entry: Update contracts to 908a50dc79192e66ab3fd518f166be05382c2c6e
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "hw.device-type: Add beaglebone-play device"
+              hash: 67c4505e12b1ef6abfc37c9466470e062875bf00
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Sidd-Gupta sidd.gupta@zylum.in
+                signed-off-by: Sidd-Gupta sidd.gupta@zylum.in
+              author: delhiryder
+          version: contracts-2.0.96
+          title: ""
+          date: 2024-03-14T16:14:23.733Z
+  version: 2.115.18+rev92
+  title: ""
+  date: 2024-03-14T18:15:29.639Z
+- commits:
     - subject: Update layers/poky to 6d1a878bbf24c66f7186b270f823fcdf82e35383
       hash: bb0ed52a776d7257e901b144e01375e964077177
       body: Update layers/poky

@@ -1,6 +1,21 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.115.18+rev95
+## (2024-03-25)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 35108dbe920e2b96e976065df205e265d19d86a5 [Self-hosted Renovate Bot] </summary>
+
+> ## balena-yocto-scripts-1.21.6
+> ### (2024-03-25)
+> 
+> * Revert "balena-build: avoid using device-type as a prefix in yocto sstate" [Kyle Harding]
+> 
+
+</details>
+
 # v2.115.18+rev94
 ## (2024-03-21)
 

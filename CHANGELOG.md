@@ -1,6 +1,11 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.115.18+rev97
+## (2024-03-26)
+
+* Update contracts to 8631765cc3b0b4c6fde0941b896dbfb1b8373455 [Self-hosted Renovate Bot]
+
 # v2.115.18+rev96
 ## (2024-03-25)
 

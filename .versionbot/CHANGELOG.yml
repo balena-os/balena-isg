@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update contracts to 8631765cc3b0b4c6fde0941b896dbfb1b8373455
+      hash: 4a5fa98b85b1e78fae9c6caa26574c1cecfff277
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 8631765cc3b0b4c6fde0941b896dbfb1b8373455
+        changelog-entry: Update contracts to 8631765cc3b0b4c6fde0941b896dbfb1b8373455
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.115.18+rev97
+  title: ""
+  date: 2024-03-26T14:42:03.525Z
+- commits:
     - subject: Update layers/meta-openembedded to
         8bb16533532b6abc2eded7d9961ab2a108fd7a5b
       hash: d37b6608ebe1087e4e80fb7a68cd44c991a48c86

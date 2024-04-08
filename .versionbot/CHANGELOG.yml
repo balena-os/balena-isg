@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update contracts to 928d8e7a5295414c87548e8eca8ddea88205fb10
+      hash: 5e93f04611c7fa47f6edd9535b4650d01919071f
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 928d8e7a5295414c87548e8eca8ddea88205fb10
+        changelog-entry: Update contracts to 928d8e7a5295414c87548e8eca8ddea88205fb10
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Add Advantech ECU1370 to hardware contract.
+              hash: 0dfe4758230bef9d6c97f533019aaba93cdc1520
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Lisandro Pérez Meyer <lpmeyer@ics.com>
+                signed-off-by: Lisandro Pérez Meyer <lpmeyer@ics.com>
+              author: Lisandro Pérez Meyer
+          version: contracts-2.0.100
+          title: ""
+          date: 2024-04-08T18:29:36.856Z
+  version: 2.115.18+rev101
+  title: ""
+  date: 2024-04-08T20:34:26.364Z
+- commits:
     - subject: Update layers/poky to 1e0d58c53b7d9c3feb631e46666ae7a3e3614253
       hash: 19a445b97b2305b692f955abbe966fbadcfa2225
       body: Update layers/poky

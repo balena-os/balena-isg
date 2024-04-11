@@ -1,6 +1,21 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.115.18+rev104
+## (2024-04-11)
+
+
+<details>
+<summary> Update contracts to d06ad25196f67c4d20ad309941192fdddf80e307 [Self-hosted Renovate Bot] </summary>
+
+> ## contracts-2.0.103
+> ### (2024-04-11)
+> 
+> * Remove Ubuntu Lunar 23.04 since it's EOL [Thodoris Greasidis]
+> 
+
+</details>
+
 # v2.115.18+rev103
 ## (2024-04-11)
 

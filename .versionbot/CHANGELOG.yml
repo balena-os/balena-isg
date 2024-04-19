@@ -1,4 +1,28 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 45b33b1ab2a550bd8292e61139c7e1316d75219c
+      hash: 782b18b34ede22a05de9b927e063035d1f4e149c
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 45b33b1ab2a550bd8292e61139c7e1316d75219c
+        changelog-entry: Update balena-yocto-scripts to 45b33b1ab2a550bd8292e61139c7e1316d75219c
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Add missing $select for release_asset.asset_key
+              hash: 4f4f65c0b2cace726eccbea5d5ed8ed0f8302e54
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Thodoris Greasidis
+              nested: []
+          version: balena-yocto-scripts-1.21.7
+          title: ""
+          date: 2024-04-19T14:22:55.708Z
+  version: 2.115.18+rev105
+  title: ""
+  date: 2024-04-19T17:16:21.298Z
+- commits:
     - subject: Update contracts to d06ad25196f67c4d20ad309941192fdddf80e307
       hash: a22682a229d75aeffd87b215c482be81f084adc7
       body: Update contracts

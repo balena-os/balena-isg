@@ -1,6 +1,21 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.115.18+rev111
+## (2024-05-02)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 466d6ec592656bb950a393fc1c7a5d5ff4cf3455 [Self-hosted Renovate Bot] </summary>
+
+> ## balena-yocto-scripts-1.21.10
+> ### (2024-05-02)
+> 
+> * balena-deploy: deploy usbboot if available [Alex Gonzalez]
+> 
+
+</details>
+
 # v2.115.18+rev110
 ## (2024-04-30)
 

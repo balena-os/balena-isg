@@ -1,6 +1,21 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.115.18+rev121
+## (2024-06-06)
+
+
+<details>
+<summary> Update balena-yocto-scripts to b5b12bc2f8e08f90634d766afe30623c9899f323 [Self-hosted Renovate Bot] </summary>
+
+> ## balena-yocto-scripts-1.22.0
+> ### (2024-06-06)
+> 
+> * Create workflow to build and deploy balenaOS [Kyle Harding]
+> 
+
+</details>
+
 # v2.115.18+rev120
 ## (2024-06-06)
 

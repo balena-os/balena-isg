@@ -1,6 +1,26 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.115.18+rev131
+## (2024-07-15)
+
+
+<details>
+<summary> Update contracts to 17b44ca078f3bca2193858559d1276cc48680531 [Self-hosted Renovate Bot] </summary>
+
+> ## contracts-2.0.107
+> ### (2024-07-15)
+> 
+> * beagleplay: Fix provisioning instructions [Alexandru]
+> 
+> ## contracts-2.0.106
+> ### (2024-07-12)
+> 
+> * hw.device-type: Disable bluetooth until this feature is officially supported [delhiryder]
+> 
+
+</details>
+
 # v2.115.18+rev130
 ## (2024-07-10)
 

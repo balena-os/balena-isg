@@ -1,4 +1,43 @@
 - commits:
+    - subject: Update contracts to 17b44ca078f3bca2193858559d1276cc48680531
+      hash: 735c7d0b13a5eb0a85b9421e818b8e2c90513ba5
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 17b44ca078f3bca2193858559d1276cc48680531
+        changelog-entry: Update contracts to 17b44ca078f3bca2193858559d1276cc48680531
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "beagleplay: Fix provisioning instructions"
+              hash: 996350221bcc6ff73d83239af7ffd96653d36a2c
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru
+          version: contracts-2.0.107
+          title: ""
+          date: 2024-07-15T10:43:40.476Z
+        - commits:
+            - subject: "hw.device-type: Disable bluetooth until this feature is officially
+                supported"
+              hash: bc3746dd50d63824e3069cd0098227d47e9f22ed
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Sidd-Gupta sidd.gupta@zylum.in
+                signed-off-by: Sidd-Gupta sidd.gupta@zylum.in
+              author: delhiryder
+          version: contracts-2.0.106
+          title: ""
+          date: 2024-07-12T09:11:52.729Z
+  version: 2.115.18+rev131
+  title: ""
+  date: 2024-07-15T12:54:06.996Z
+- commits:
     - subject: Update layers/poky to be9285cbd9c959e1c712971b6dd753a971717c79
       hash: cfdddaedc82db24e1a4edf0571d8ea47bd43f19d
       body: Update layers/poky

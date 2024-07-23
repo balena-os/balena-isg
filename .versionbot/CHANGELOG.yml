@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update .gitmodules with submodule branch information
+      hash: aa9eae267682852cf9f11e4c8c2db19e3d583f8c
+      body: ""
+      footer:
+        Changelog-entry: Update .gitmodules with submodule branch information
+        changelog-entry: Update .gitmodules with submodule branch information
+      author: Kyle Harding
+      nested: []
+  version: 2.115.18+rev134
+  title: ""
+  date: 2024-07-23T09:09:54.260Z
+- commits:
     - subject: Update layers/meta-openembedded to
         4052c97dc83d0c88fc277d6fc1815e0699020daa
       hash: bc825aff2bf4696f5bc2f8ab66707f31af14dfab

@@ -24,3 +24,4 @@
 [submodule "layers/meta-rockchip"]
 	path = layers/meta-rockchip
 	url = https://github.com/JeffyCN/meta-rockchip.git
+	branch = kirkstone

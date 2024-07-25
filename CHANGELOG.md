@@ -1,6 +1,11 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.115.18+rev135
+## (2024-07-25)
+
+* Update layers/meta-rust to a5136be2ba408af1cc8afcde1c8e3d787dadd934 [balena-renovate[bot]]
+
 # v2.115.18+rev134
 ## (2024-07-23)
 

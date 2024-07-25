@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update layers/meta-rust to a5136be2ba408af1cc8afcde1c8e3d787dadd934
+      hash: fbaab190e10fd3135ff643341f3acb83c5fbe175
+      body: Update layers/meta-rust
+      footer:
+        Changelog-entry: Update layers/meta-rust to a5136be2ba408af1cc8afcde1c8e3d787dadd934
+        changelog-entry: Update layers/meta-rust to a5136be2ba408af1cc8afcde1c8e3d787dadd934
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.115.18+rev135
+  title: ""
+  date: 2024-07-25T19:42:09.336Z
+- commits:
     - subject: Update .gitmodules with submodule branch information
       hash: aa9eae267682852cf9f11e4c8c2db19e3d583f8c
       body: ""

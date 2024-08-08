@@ -1,6 +1,21 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.115.18+rev138
+## (2024-08-08)
+
+
+<details>
+<summary> Update contracts to bb77690aa0498f1060b64bebc183aea4fafb57e7 [balena-renovate[bot]] </summary>
+
+> ## contracts-2.0.111
+> ### (2024-08-08)
+> 
+> * patch: Add versionList to OpenJDK [Vipul Gupta (@vipulgupta2048)]
+> 
+
+</details>
+
 # v2.115.18+rev137
 ## (2024-08-07)
 

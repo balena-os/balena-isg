@@ -1,6 +1,21 @@
 # v2.83.10+rev1
 ## (2021-10-05)
 
+# v2.115.18+rev139
+## (2024-08-19)
+
+
+<details>
+<summary> Update contracts to e1d59ac348642e274b442db4a41edab5c511576c [balena-renovate[bot]] </summary>
+
+> ## contracts-2.0.112
+> ### (2024-08-19)
+> 
+> * Add support for Ubuntu Noble [ruffsl]
+> 
+
+</details>
+
 # v2.115.18+rev138
 ## (2024-08-08)
 

@@ -25,3 +25,7 @@
 	path = layers/meta-rockchip
 	url = https://github.com/JeffyCN/meta-rockchip.git
 	branch = kirkstone
+[submodule "layers/meta-cyclonedx"]
+	path = layers/meta-cyclonedx
+	url = https://github.com/balena-os/meta-cyclonedx
+	branch = kirkstone
